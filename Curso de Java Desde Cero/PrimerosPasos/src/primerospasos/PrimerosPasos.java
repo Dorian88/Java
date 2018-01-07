@@ -77,11 +77,16 @@ public class PrimerosPasos {
         
         Factorial fac = new Factorial();
         fac.factorial();
-        System.out.print("\n");*/
+        System.out.print("\n");
         
         System.out.println("----------Usando los Arrays----------");
         Uso_Array arreglos = new Uso_Array();
         arreglos.usoArray();
+        System.out.print("\n");*/
+        
+        System.out.println("----------Programación Orientada a Objetos----------");
+        Carro renault = new Carro();
+        System.out.println("Este carro tiene " + renault.llantas + " llantas");
         System.out.print("\n");
     }
     
