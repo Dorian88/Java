@@ -85,8 +85,16 @@ public class PrimerosPasos {
         System.out.print("\n");*/
         
         System.out.println("----------Programación Orientada a Objetos----------");
-        Carro renault = new Carro();
-        System.out.println("Este carro tiene " + renault.llantas + " llantas");
+        Carro miCarro = new Carro();
+        System.out.println(miCarro.datosGenerales());
+        miCarro.color("Rojo");
+        System.out.println(miCarro.mostrarColor());
+        miCarro.asiento("no");
+        System.out.println(miCarro.confirmaAsiento());
+        miCarro.configura_climatizador("no");
+        System.out.println(miCarro.mostrarClimatizador());
+        System.out.println(miCarro.pesoTotalCarro());
+        System.out.println("El precio total del carro es: " + miCarro.precioCarro() + " Euros");
         System.out.print("\n");
     }
     
