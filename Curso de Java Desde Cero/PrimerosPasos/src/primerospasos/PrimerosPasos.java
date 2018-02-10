@@ -82,7 +82,7 @@ public class PrimerosPasos {
         System.out.println("----------Usando los Arrays----------");
         Uso_Array arreglos = new Uso_Array();
         arreglos.usoArray();
-        System.out.print("\n");
+        System.out.print("\n");*/
         
         System.out.println("----------Programación Orientada a Objetos----------");
         Carro miCarro = new Carro();
@@ -95,16 +95,16 @@ public class PrimerosPasos {
         System.out.println(miCarro.mostrarClimatizador());
         System.out.println(miCarro.pesoTotalCarro());
         System.out.println("El precio total del carro es: " + miCarro.precioCarro() + " Euros");
-        System.out.print("\n");*/
+        System.out.print("\n");
         
-        System.out.println("----------Uso de constantes usando FINAL----------");
+        /*System.out.println("----------Uso de constantes usando FINAL----------");
         Empleados trabajador1 = new Empleados("Dorian");
         Empleados trabajador2 = new Empleados("Diana");
-        System.out.println(trabajador1.devuelveDatos());
-        System.out.println(trabajador2.devuelveDatos());
+        Empleados trabajador3 = new Empleados("Alexander");
         trabajador1.cambioSeccion("Rescursos Humanos");
-        System.out.println(trabajador1.devuelveDatos());
-        System.out.print("\n");
+        System.out.println(trabajador1.devuelveDatos() + "\n" + trabajador2.devuelveDatos() + "\n" + trabajador3.devuelveDatos()+ "\n");
+        System.out.print(Empleados.proxId());
+        System.out.print("\n");*/
     }
     
 }
