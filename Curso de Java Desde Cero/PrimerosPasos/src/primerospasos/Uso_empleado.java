@@ -6,7 +6,9 @@ public class Uso_empleado {
 
     public static void main(String[] args) {
         
-        Empleado []misEmpleados = new Empleado[4];
+        Jefatura jefe_RRHH = new Jefatura("Dorian Jaramillo", 1500000, 2014, 8, 5);
+        Empleado []misEmpleados = new Empleado[5];
+        
         
         /*Empleado empleado1 = new Empleado("Dorian Jaramillo", 2500000, 2010, 9, 23);
         Empleado empleado2 = new Empleado("Diana Betancur", 2400000, 2012, 12, 11);
@@ -20,11 +22,17 @@ public class Uso_empleado {
         System.out.println("Nombre: " + empleado2.nombre() + " Sueldo: " + empleado2.sueldo() + " Fecha de Contrato: " + empleado2.contrato());
         System.out.println("Nombre: " + empleado3.nombre() + " Sueldo: " + empleado3.sueldo() + " Fecha de Contrato: " + empleado3.contrato());*/
         
-        misEmpleados[0] = new Empleado("Dorian Jaramillo", 2500000, 2010, 9, 23);
+        misEmpleados[0] = new Empleado("Alexander Rivas", 2500000, 2010, 9, 23);
         misEmpleados[1] = new Empleado("Diana Betancur", 2400000, 2012, 12, 11);
         misEmpleados[2] = new Empleado("Javier Restrepo", 1600000, 2008, 1, 31);
-        misEmpleados[3] = new Empleado("Alexander Rivas");
+        misEmpleados[3] = jefe_RRHH;
+        misEmpleados[4] = new Jefatura("Alejandra Valencia", 1200000, 2004, 5, 26);
         
+        Jefatura jefe_Finanzas = (Jefatura)misEmpleados[4];
+        
+        jefe_RRHH.incentivo(250000);
+        jefe_Finanzas.incentivo(275000);
+                
         for(int i = 0; i<misEmpleados.length; i++){
             misEmpleados[i].subirSueldo(5);
         }
@@ -39,6 +47,8 @@ class Empleado{
     private String nombre;
     private double sueldo;
     private Date altaContrato;
+    private static int IdSiguiente;
+    private int id;
     
     //Constructores
     public Empleado(String nom, double sue, int anio, int mes, int dia){
@@ -46,6 +56,8 @@ class Empleado{
         sueldo = sue;
         GregorianCalendar fecha = new GregorianCalendar(anio, mes-1, dia);
         altaContrato = fecha.getTime();
+        ++IdSiguiente;
+        id = IdSiguiente;
     }
     
     public Empleado(String nom){
@@ -55,7 +67,7 @@ class Empleado{
     //Metodos Getter
     public String nombre(){
         
-        return nombre;
+        return nombre + " Id: " + id;
     }
     
     public double sueldo(){
@@ -74,4 +86,21 @@ class Empleado{
         sueldo += aumento;
     }
     
+}
+
+class Jefatura extends Empleado{
+    private double incentivo;
+    
+    public Jefatura(String nom, double sue, int anio, int mes, int dia){
+        super(nom, sue, anio, mes, dia);
+    }
+    
+    public void incentivo (double inc){
+        incentivo = inc;
+    }
+    
+    public double sueldo(){
+        double sueldoJefes = super.sueldo();
+        return sueldoJefes + incentivo;
+    }
 }

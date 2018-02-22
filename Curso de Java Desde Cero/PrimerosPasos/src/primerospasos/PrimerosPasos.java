@@ -85,8 +85,10 @@ public class PrimerosPasos {
         System.out.print("\n");*/
         
         System.out.println("----------Programación Orientada a Objetos----------");
-        Carro miCarro = new Carro();
-        System.out.println(miCarro.datosGenerales());
+        /*Carro miCarro = new Carro();
+        Carro miVehiculo = new Carro();
+        Camionenta camion = new Camionenta(500, 7);*/
+        /*System.out.println(miCarro.datosGenerales());
         miCarro.color("Rojo");
         System.out.println(miCarro.mostrarColor());
         miCarro.asiento("no");
@@ -95,6 +97,12 @@ public class PrimerosPasos {
         System.out.println(miCarro.mostrarClimatizador());
         System.out.println(miCarro.pesoTotalCarro());
         System.out.println("El precio total del carro es: " + miCarro.precioCarro() + " Euros");
+        miVehiculo.color("Rojo");
+        camion.color("Azul");
+        camion.asiento("Si");
+        camion.configura_climatizador("Si");
+        System.out.println(miVehiculo.datosGenerales() + ". " + miVehiculo.mostrarColor());
+        System.out.println(camion.datosGenerales() + " " + camion.estadoCamioneta());*/
         System.out.print("\n");
         
         /*System.out.println("----------Uso de constantes usando FINAL----------");
