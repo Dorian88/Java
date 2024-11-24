@@ -1,0 +1,45 @@
+package interfaces_graficas;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class G17VariosOyentes {
+
+	public static void main(String[] args) {
+		
+		MarcoPricipal miMarco = new MarcoPricipal();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+
+class MarcoPricipal extends JFrame{
+	
+	public MarcoPricipal() {
+		
+		setTitle("Prueba Varios");
+		setBounds(1200, 100, 300, 200);
+		LaminaPrincipal lamina = new LaminaPrincipal();
+		add(lamina);
+	}
+}
+
+class LaminaPrincipal extends JPanel{
+	
+	public LaminaPrincipal() {
+		
+		JButton botonNuevo  = new JButton("Nuevo");
+		botonCerrar  = new JButton("Cerrar Todo");
+		
+		add(botonNuevo);
+		add(botonCerrar);
+	}
+	
+	JButton botonCerrar;
+}

@@ -1,0 +1,56 @@
+package interfaces_graficas;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class G20PruebaTexto {
+
+	public static void main(String[] args) {
+		
+		MarcoTexto miMarco = new MarcoTexto();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		//miMarco.setVisible(true);
+
+	}
+
+}
+
+class MarcoTexto extends JFrame{
+	
+	public MarcoTexto() {
+		
+		setBounds(600, 300, 600, 350);
+		LaminaTexto miLamina = new LaminaTexto();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class LaminaTexto extends JPanel{
+	
+	public LaminaTexto() {
+		
+		JLabel texto1 = new JLabel("Email: ");
+		campo1 = new JTextField(20);
+		add(campo1);
+		
+		JButton miBoton = new JButton("Comprobar");
+		DameTexto miEvento = new DameTexto();
+		miBoton.addActionListener(miEvento);
+		add(miBoton);
+	}
+	
+	private class DameTexto implements ActionListener{
+		
+		public void actionPerformed(ActionEvent e) {
+			
+			System.out.println(campo1.getText());
+			
+		}
+	}
+	
+	private JTextField campo1;
+}

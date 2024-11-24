@@ -1,0 +1,43 @@
+package interfaces_graficas;
+
+import java.awt.*;
+
+import javax.swing.*;
+
+public class G19Calculadora {
+
+	public static void main(String[] args) {
+		
+		MarcoCalculadora miMarco = new MarcoCalculadora();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+	}
+
+}
+
+class MarcoCalculadora extends JFrame{
+	
+	public MarcoCalculadora() {
+		
+		setTitle("Calculadora");
+		setBounds(500, 300, 450, 300);
+		LaminaCalculadora miLamina = new LaminaCalculadora();
+		add(miLamina);
+	}
+	
+}
+
+class LaminaCalculadora extends JPanel{
+	
+	public LaminaCalculadora() {
+		
+		setLayout(new BorderLayout());
+		
+		JButton pantalla = new JButton("0");
+		pantalla.setEnabled(false);
+		
+		add(pantalla, BorderLayout.NORTH);
+	}
+}
