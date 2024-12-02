@@ -1,9 +1,0 @@
-package interfaces_graficas;
-
-import java.awt.*;
-import java.awt.event.*;
-import javax.swing.*;
-
-public class G19LayoutsPt2 {
-
-}
