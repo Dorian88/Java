@@ -1,0 +1,44 @@
+package interfaces_graficas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import java.awt.*;
+
+public class G30EjemploSliders {
+
+	public static void main(String[] args) {
+		
+		FrameSliders miMarco = new FrameSliders();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class FrameSliders extends JFrame{
+	
+	public FrameSliders() {
+		setBounds(550, 200, 550, 350);
+		
+		LaminaSliders miLamina = new LaminaSliders();
+		
+		add(miLamina);
+		
+		setVisible(true);
+	}
+}
+
+class LaminaSliders extends JPanel{
+	
+	public LaminaSliders() {
+		setLayout(new BorderLayout());
+		
+		rotulo = new JLabel("En un lugar de La Mancha de cuyo nombre...");
+		
+		add(rotulo, BorderLayout.CENTER);
+	}
+	
+	private JLabel rotulo;
+	private JSlider control;
+}

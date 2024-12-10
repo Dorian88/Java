@@ -1,0 +1,37 @@
+package interfaces_graficas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import java.awt.*;
+
+public class G30EjemploSliders {
+
+	public static void main(String[] args) {
+		
+		FrameSliders1 miMarco = new FrameSliders1();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class FrameSliders1 extends JFrame{
+	
+	public FrameSliders1() {
+		setBounds(550, 200, 550, 350);
+		
+		LaminaSliders1 miLamina = new LaminaSliders1();
+		
+		add(miLamina);
+		
+		setVisible(true);
+	}
+}
+
+class LaminaSliders1 extends JPanel{
+	
+	public LaminaSliders1() {
+		
+	}
+}

@@ -1,0 +1,60 @@
+package interfaces_graficas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import java.awt.*;
+
+public class G32MarcoMenu{
+
+	public static void main(String[] args){
+		
+		MenuFrame miMarco = new MenuFrame();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+class MenuFrame extends JFrame{
+	
+	public MenuFrame(){
+		
+		setBounds(500, 300, 550, 400);
+		MenuLamina miLamina = new MenuLamina();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class MenuLamina extends JPanel{
+	
+	public MenuLamina() {
+		
+		JMenuBar miBarra = new JMenuBar();
+		
+		JMenu archivo = new JMenu("Archivo");
+		JMenu edicion = new JMenu("Edición");
+		JMenu herramientas = new JMenu("Herramientas");
+		
+		JMenuItem guardar = new JMenuItem("Guardar");
+		JMenuItem guardarComo = new JMenuItem("Guardar Como");
+		JMenuItem cortar = new JMenuItem("Cortar");
+		JMenuItem copiar = new JMenuItem("Copiar");
+		JMenuItem pegar = new JMenuItem("Pegar");
+		JMenuItem generales = new JMenuItem("General");
+		
+		archivo.add(guardar);
+		archivo.add(guardarComo);
+		archivo.add(cortar);
+		archivo.add(copiar);
+		archivo.add(pegar);
+		archivo.add(generales);
+				
+		miBarra.add(archivo);
+		miBarra.add(edicion);
+		miBarra.add(herramientas);
+		
+		add(miBarra);
+	}
+}

@@ -1,0 +1,35 @@
+package interfaces_graficas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import java.awt.*;
+
+public class G32MarcoMenu{
+
+	public static void main(String[] args){
+		
+		MenuFrame miMarco = new MenuFrame();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+class MenuFrame extends JFrame{
+	
+	public MenuFrame(){
+		
+		setBounds(500, 300, 550, 400);
+		MenuLamina miLamina = new MenuLamina();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class MenuLamina extends JPanel{
+	
+	public MenuLamina() {
+		
+	}
+}
