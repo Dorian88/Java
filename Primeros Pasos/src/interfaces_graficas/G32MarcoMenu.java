@@ -40,9 +40,12 @@ class MenuLamina extends JPanel{
 		
 		JMenuItem guardar = new JMenuItem("Guardar");
 		JMenuItem guardarComo = new JMenuItem("Guardar Como");
-		JMenuItem cortar = new JMenuItem("Cortar");
+		/*JMenuItem cortar = new JMenuItem("Cortar", new ImageIcon("src\\Graficos\\cortar.gif"));
 		JMenuItem copiar = new JMenuItem("Copiar");
-		JMenuItem pegar = new JMenuItem("Pegar");
+		JMenuItem pegar = new JMenuItem("Pegar");*/
+		JMenuItem cortar = new JMenuItem("Cortar", new ImageIcon("src\\Graficos\\cortar.gif"));
+		JMenuItem copiar = new JMenuItem("Copiar", new ImageIcon("src\\Graficos\\copiar.gif"));
+		JMenuItem pegar = new JMenuItem("Pegar", new ImageIcon("src\\Graficos\\pegar.gif"));
 		JMenuItem generales = new JMenuItem("General");
 		JMenuItem opcion1 = new JMenuItem("Opcion 1");
 		JMenuItem opcion2 = new JMenuItem("Opcion 2");

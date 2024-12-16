@@ -4,4 +4,8 @@
     <fullyQualifiedTypeName name="java.awt.BorderLayout"/>
     <fullyQualifiedTypeName name="javax.swing.JFrame"/>
     <fullyQualifiedTypeName name="java.awt.Event"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.FontSizeAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ItalicAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.FontFamilyAction"/>
 </qualifiedTypeNameHistroy>
