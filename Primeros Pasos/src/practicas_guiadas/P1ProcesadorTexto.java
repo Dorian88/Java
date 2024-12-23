@@ -48,65 +48,40 @@ class LaminaProcesador extends JPanel{
 		configuraMenu("Times New Roman", "Fuente", "Times New Roman", 9, 10, "");
 		
 		//-----------------------------------------------------------------------------------------------------------------
-		configuraMenu("Negrita", "Estilo", "", Font.BOLD, 1, "src\\Graficos\\negrita.gif");
-		configuraMenu("Cursiva", "Estilo", "", Font.ITALIC, 1, "src\\Graficos\\cursiva.gif");
+		JCheckBoxMenuItem negrita = new JCheckBoxMenuItem("Negrita", new ImageIcon("src\\Graficos\\negrita.gif"));
+		JCheckBoxMenuItem cursiva = new JCheckBoxMenuItem("Cursiva", new ImageIcon("src\\Graficos\\cursiva.gif"));
 		
-		//-----------------------------------------------------------------------------------------------------------------
-		configuraMenu("12", "Tamaño", "", 9, 12, "");
-		configuraMenu("16", "Tamaño", "", 9, 16, "");
-		configuraMenu("20", "Tamaño", "", 9, 20, "");
-		configuraMenu("24", "Tamaño", "", 9, 24, "");
+		negrita.addActionListener(new StyledEditorKit.BoldAction());
+		cursiva.addActionListener(new StyledEditorKit.ItalicAction());
 		
-		//-----------------------------------------------------------------------------------------------------------------
-		
-		//-----------------------------------------------------------------------------------------------------------------
-		/*JMenuItem arial = new JMenuItem("Arial");
-		JMenuItem verdana = new JMenuItem("Verdana");
-		JMenuItem timesNewRoman = new JMenuItem("Times New Roman");
-		JMenuItem negrita = new JMenuItem("Negrita");
-		JMenuItem cursiva = new JMenuItem("Cursiva");
-		JMenuItem tam12 = new JMenuItem("12");
-		JMenuItem tam16 = new JMenuItem("16");
-		JMenuItem tam20 = new JMenuItem("20");
-		JMenuItem tam24 = new JMenuItem("24");*/
-		
-		//-----------------------------------------------------------------------------------------------------------------
-		/*fuente.add(arial);
-		fuente.add(verdana);
-		fuente.add(timesNewRoman);
 		estilo.add(negrita);
 		estilo.add(cursiva);
-		tamano.add(tam12);
-		tamano.add(tam16);
-		tamano.add(tam20);
-		tamano.add(tam24);
 		
-		verdana.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent e) {
-				
-				miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
-				
-			}
-		});
+		//-----------------------------------------------------------------------------------------------------------------
+		ButtonGroup tamanoLetra = new ButtonGroup();
 		
-		arial.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent e) {
-				
-				miArea.setFont(new Font("Arial", Font.PLAIN, 12));
-				
-			}
-		});
+		JRadioButtonMenuItem doce = new JRadioButtonMenuItem("12");
+		JRadioButtonMenuItem dieciseis = new JRadioButtonMenuItem("16");
+		JRadioButtonMenuItem veinte = new JRadioButtonMenuItem("20");
+		JRadioButtonMenuItem veinticuatro = new JRadioButtonMenuItem("24");
 		
-		timesNewRoman.addActionListener(new ActionListener() {
-			
-			public void actionPerformed(ActionEvent e) {
-				
-				miArea.setFont(new Font("Times New Roman", Font.PLAIN, 12));
-				
-			}
-		});*/
+		veinticuatro.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK));
+		
+		tamanoLetra.add(doce);
+		tamanoLetra.add(dieciseis);
+		tamanoLetra.add(veinte);
+		tamanoLetra.add(veinticuatro);
+		
+		doce.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 12));
+		dieciseis.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 16));
+		veinte.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 20));
+		veinticuatro.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 24));
+		
+		tamano.add(doce);
+		tamano.add(dieciseis);
+		tamano.add(veinte);
+		tamano.add(veinticuatro);
+		
 		//-----------------------------------------------------------------------------------------------------------------
 		barra.add(fuente);
 		barra.add(estilo);
@@ -117,6 +92,55 @@ class LaminaProcesador extends JPanel{
 		
 		add(laminaMenu, BorderLayout.NORTH);
 		add(miArea, BorderLayout.CENTER);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		JPopupMenu emergente = new JPopupMenu();
+		JMenuItem negritaE = new JMenuItem("Negrita");
+		JMenuItem cursivaE = new JMenuItem("Cursiva");
+		
+		negritaE.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaE.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		emergente.add(negritaE);
+		emergente.add(cursivaE);
+				
+		miArea.setComponentPopupMenu(emergente);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		//Barra de Herramientas
+				
+		miBarra = new JToolBar();
+		
+		configuraBarra("src\\Graficos\\negrita.gif").addActionListener(new StyledEditorKit.BoldAction());
+		configuraBarra("src\\Graficos\\cursiva.gif").addActionListener(new StyledEditorKit.ItalicAction());
+		configuraBarra("src\\Graficos\\Subrayar.gif").addActionListener(new StyledEditorKit.UnderlineAction());
+		
+		miBarra.addSeparator();
+		
+		configuraBarra("src\\Graficos\\Amarillo.gif").addActionListener(new StyledEditorKit.ForegroundAction("Poner Amarillo", Color.YELLOW));
+		configuraBarra("src\\Graficos\\Azul.gif").addActionListener(new StyledEditorKit.ForegroundAction("Poner Azul", Color.BLUE));
+		configuraBarra("src\\Graficos\\Rojo.gif").addActionListener(new StyledEditorKit.ForegroundAction("Poner Rojo", Color.RED));
+		
+		miBarra.addSeparator();
+		
+		configuraBarra("src\\Graficos\\izquierda.gif").addActionListener(new StyledEditorKit.AlignmentAction("Izquierda", 0));
+		configuraBarra("src\\Graficos\\centrado.gif").addActionListener(new StyledEditorKit.AlignmentAction("Centrado", 1));
+		configuraBarra("src\\Graficos\\derecha.gif").addActionListener(new StyledEditorKit.AlignmentAction("Derecha", 2));
+		configuraBarra("src\\Graficos\\justificado.gif").addActionListener(new StyledEditorKit.AlignmentAction("Justificado", 3));
+		
+		
+		
+		miBarra.setOrientation(1);
+		add(miBarra, BorderLayout.WEST);
+	}
+	
+	public JButton configuraBarra(String ruta) {
+		
+		JButton boton = new JButton(new ImageIcon(ruta));
+		
+		miBarra.add(boton);
+		
+		return boton;
 	}
 	
 	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tam, String rutaMenu) {
@@ -147,9 +171,13 @@ class LaminaProcesador extends JPanel{
 			
 			if(estilos == Font.BOLD) {
 				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
+				
 				elemMenu.addActionListener(new StyledEditorKit.BoldAction());
 				
 			}else if(estilos == Font.ITALIC);{
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_DOWN_MASK));
 				
 				elemMenu.addActionListener(new StyledEditorKit.ItalicAction());
 			}
@@ -159,66 +187,12 @@ class LaminaProcesador extends JPanel{
 			
 			elemMenu.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", tam));
 		}
-		
-		//elemMenu.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tam));
 	}
-	
-	/*private class GestionaEventos implements ActionListener{
-
-		String tipoTexto, menu;
-		int estiloLetra, tamLetra;
-		
-		GestionaEventos(String elemento, String texto2, int estilo2, int tamaLetra){
-			
-			tipoTexto = texto2;
-			estiloLetra = estilo2;
-			tamLetra = tamaLetra;
-			menu = elemento;
-		}
-		
-		public void actionPerformed(ActionEvent e) {
-			
-			letras = miArea.getFont();
-			
-			if (menu == "Arial" || menu == "Verdana" || menu == "Times New Roman") {
-				
-				estiloLetra = letras.getStyle();
-				tamLetra = letras.getSize();
-				
-			}else if(menu == "Cursiva" || menu == "Negrita") {
-				if(letras.getStyle() == 1 || letras.getStyle() == 2) {
-					
-					estiloLetra = 3;
-					
-				}
-				
-				tipoTexto = letras.getFontName();
-				tamLetra = letras.getSize();
-				
-			}else if(menu == "12" || menu == "16" || menu == "20" || menu == "24") {
-				
-				estiloLetra = letras.getStyle();
-				tipoTexto = letras.getFontName();
-				
-			}
-			
-			miArea.setFont(new Font(tipoTexto, estiloLetra, tamLetra));
-			
-		}
-		
-	}
-	
-	private class GestionaMenu implements ActionListener{
-
-		public void actionPerformed(ActionEvent e) {
-			
-			miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
-			
-		}
-		
-	}*/
 	
 	JTextPane miArea;
 	JMenu fuente, estilo, tamano;
 	Font letras;
+	JButton negritaBarra, cursivaBarra, subrayarBarra, azulBarra, rojoBarra, amarilloBarra, izquierdaBarra, centroBarra, derechaBarra,
+	justificadoBarra;
+	JToolBar miBarra;
 }

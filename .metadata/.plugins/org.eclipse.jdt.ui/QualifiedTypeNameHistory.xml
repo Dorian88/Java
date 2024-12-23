@@ -6,6 +6,10 @@
     <fullyQualifiedTypeName name="java.awt.Event"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.FontSizeAction"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ItalicAction"/>
-    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.FontFamilyAction"/>
+    <fullyQualifiedTypeName name="javax.swing.KeyStroke"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.BoldAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.UnderlineAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
+    <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.AlignmentAction"/>
 </qualifiedTypeNameHistroy>

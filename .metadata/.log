@@ -746,3 +746,1719 @@ user global configuration and to define the default location to store repositori
 not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
 EGit might behave differently since they see different configuration options.
 This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-12-17 17:36:25.648 -----------------------------------------------
+eclipse.buildId=4.33.0.20240801-0745
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-17 17:37:12.876
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-17 17:37:22.315
+!MESSAGE Logback config file: C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-17 17:38:05.202
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USUARIO'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-12-18 16:48:04.196 -----------------------------------------------
+eclipse.buildId=4.33.0.20240801-0745
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-18 16:48:38.172
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-18 16:48:45.142
+!MESSAGE Logback config file: C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-18 16:49:12.442
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USUARIO'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-12-21 15:39:20.191 -----------------------------------------------
+eclipse.buildId=4.33.0.20240801-0745
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-21 15:40:23.899
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-21 15:40:39.159
+!MESSAGE Logback config file: C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-21 15:41:17.380
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USUARIO'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2024-12-23 15:53:23.037 -----------------------------------------------
+eclipse.buildId=4.33.0.20240801-0745
+java.version=21.0.3
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_CO
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-23 15:53:57.470
+!MESSAGE Activated before the state location was initialized. Retry after the state location is initialized.
+
+!ENTRY ch.qos.logback.classic 1 0 2024-12-23 15:54:06.587
+!MESSAGE Logback config file: C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.m2e.logback\logback.2.6.1.20240411-1122.xml
+
+!ENTRY org.eclipse.egit.ui 2 0 2024-12-23 15:54:42.605
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\USUARIO'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-12-23 16:14:16.321
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package practicas_guiadas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.text.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P1ProcesadorTexto {
+
+	public static void main(String[] args) {
+		
+		MenuProcesador miMarco = new MenuProcesador();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class MenuProcesador extends JFrame{
+	
+	public MenuProcesador() {
+		
+		setBounds(500, 300, 550, 400);
+		LaminaProcesador miLamina = new LaminaProcesador();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class LaminaProcesador extends JPanel{
+	
+	public LaminaProcesador(){
+		
+		setLayout(new BorderLayout());
+		JPanel laminaMenu = new JPanel();
+		JMenuBar barra = new JMenuBar();
+		miArea = new JTextPane();
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		fuente = new JMenu("Fuente");
+		estilo = new JMenu("Estilo");
+		tamano = new JMenu("Tamaño");
+		
+		configuraMenu("Arial", "Fuente", "Arial", 9, 10, "");
+		configuraMenu("Verdana", "Fuente", "Verdana", 9, 10, "");
+		configuraMenu("Times New Roman", "Fuente", "Times New Roman", 9, 10, "");
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("Negrita", "Estilo", "", Font.BOLD, 1, "src\\Graficos\\negrita.gif");
+		configuraMenu("Cursiva", "Estilo", "", Font.ITALIC, 1, "src\\Graficos\\cursiva.gif");*/
+		
+		JCheckBoxMenuItem negrita = new JCheckBoxMenuItem("Negrita", new ImageIcon("src\\Graficos\\negrita.gif"));
+		JCheckBoxMenuItem cursiva = new JCheckBoxMenuItem("Cursiva", new ImageIcon("src\\Graficos\\cursiva.gif"));
+		
+		negrita.addActionListener(new StyledEditorKit.BoldAction());
+		cursiva.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("12", "Tamaño", "", 9, 12, "");
+		configuraMenu("16", "Tamaño", "", 9, 16, "");
+		configuraMenu("20", "Tamaño", "", 9, 20, "");
+		configuraMenu("24", "Tamaño", "", 9, 24, "");*/
+		
+		ButtonGroup tamanoLetra = new ButtonGroup();
+		
+		JRadioButtonMenuItem doce = new JRadioButtonMenuItem("12");
+		JRadioButtonMenuItem dieciseis = new JRadioButtonMenuItem("16");
+		JRadioButtonMenuItem veinte = new JRadioButtonMenuItem("20");
+		JRadioButtonMenuItem veinticuatro = new JRadioButtonMenuItem("24");
+		
+		veinticuatro.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK));
+		
+		tamanoLetra.add(doce);
+		tamanoLetra.add(dieciseis);
+		tamanoLetra.add(veinte);
+		tamanoLetra.add(veinticuatro);
+		
+		doce.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 12));
+		dieciseis.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 16));
+		veinte.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 20));
+		veinticuatro.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 24));
+		
+		tamano.add(doce);
+		tamano.add(dieciseis);
+		tamano.add(veinte);
+		tamano.add(veinticuatro);
+		
+		//tamano = new JMenu("Tamaño");
+		//-----------------------------------------------------------------------------------------------------------------
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*JMenuItem arial = new JMenuItem("Arial");
+		JMenuItem verdana = new JMenuItem("Verdana");
+		JMenuItem timesNewRoman = new JMenuItem("Times New Roman");
+		JMenuItem negrita = new JMenuItem("Negrita");
+		JMenuItem cursiva = new JMenuItem("Cursiva");
+		JMenuItem tam12 = new JMenuItem("12");
+		JMenuItem tam16 = new JMenuItem("16");
+		JMenuItem tam20 = new JMenuItem("20");
+		JMenuItem tam24 = new JMenuItem("24");*/
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*fuente.add(arial);
+		fuente.add(verdana);
+		fuente.add(timesNewRoman);
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		tamano.add(tam12);
+		tamano.add(tam16);
+		tamano.add(tam20);
+		tamano.add(tam24);
+		
+		verdana.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		arial.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Arial", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		timesNewRoman.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+				
+			}
+		});*/
+		//-----------------------------------------------------------------------------------------------------------------
+		barra.add(fuente);
+		barra.add(estilo);
+		barra.add(tamano);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		laminaMenu.add(barra);
+		
+		add(laminaMenu, BorderLayout.NORTH);
+		add(miArea, BorderLayout.CENTER);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		JPopupMenu emergente = new JPopupMenu();
+		JMenuItem negritaE = new JMenuItem("Negrita");
+		JMenuItem cursivaE = new JMenuItem("Cursiva");
+		
+		negritaE.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaE.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		emergente.add(negritaE);
+		emergente.add(cursivaE);
+				
+		miArea.setComponentPopupMenu(emergente);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		//Barra de Herramientas
+		/*JToolBar miBarra = new JToolBar();
+		
+		JButton negritaBarra = new JButton(new ImageIcon("src\\Graficos\\negrita.gif"));
+		JButton cursivaBarra = new JButton(new ImageIcon("src\\Graficos\\cursiva.gif"));
+		JButton subrayarBarra = new JButton(new ImageIcon("src\\Graficos\\Subrayar.gif"));
+		JButton azulBarra = new JButton(new ImageIcon("src\\Graficos\\Azul.gif"));
+		JButton rojoBarra = new JButton(new ImageIcon("src\\Graficos\\Rojo.gif"));
+		JButton amarilloBarra = new JButton(new ImageIcon("src\\Graficos\\Amarillo.gif"));
+		JButton izquierdaBarra = new JButton(new ImageIcon("src\\Graficos\\izquierda.gif"));
+		JButton centroBarra = new JButton(new ImageIcon("src\\Graficos\\centrado.gif"));
+		JButton derechaBarra = new JButton(new ImageIcon("src\\Graficos\\derecha.gif"));
+		JButton justificadoBarra = new JButton(new ImageIcon("src\\Graficos\\justificado.gif"));
+		
+		negritaBarra.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaBarra.addActionListener(new StyledEditorKit.ItalicAction());
+		subrayarBarra.addActionListener(new StyledEditorKit.UnderlineAction());
+		amarilloBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Amarillo", Color.YELLOW));
+		azulBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Azul", Color.BLUE));
+		rojoBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Rojo", Color.RED));
+		izquierdaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Izquierda", 0));
+		centroBarra.addActionListener(new StyledEditorKit.AlignmentAction("Centrado", 1));
+		derechaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Derecha", 2));
+		justificadoBarra.addActionListener(new StyledEditorKit.AlignmentAction("Justificado", 3));
+		
+		miBarra.add(negritaBarra);
+		miBarra.add(cursivaBarra);
+		miBarra.add(subrayarBarra);
+		miBarra.add(amarilloBarra);
+		miBarra.add(azulBarra);
+		miBarra.add(rojoBarra);
+		miBarra.add(izquierdaBarra);
+		miBarra.add(centroBarra);
+		miBarra.add(derechaBarra);
+		miBarra.add(justificadoBarra);*/
+		
+		miBarra.setOrientation(1);
+		add(miBarra, BorderLayout.WEST);
+	}
+	
+	public JButton configuraBarra()
+	
+	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tam, String rutaMenu) {
+		
+		JMenuItem elemMenu = new JMenuItem(rotulo, new ImageIcon(rutaMenu));
+		
+		if(menu == "Fuente") {
+			
+			if(tipoLetra == "Arial") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Arial"));
+				
+			}else if(tipoLetra == "Verdana") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Verdana"));
+				
+			}else if(tipoLetra == "Times New Roman") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Times New Roman"));
+				
+			}
+			
+			fuente.add(elemMenu);
+			
+		}else if(menu == "Estilo") {
+			
+			estilo.add(elemMenu);
+			
+			if(estilos == Font.BOLD) {
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.BoldAction());
+				
+			}else if(estilos == Font.ITALIC);{
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.ItalicAction());
+			}
+			
+		}else if(menu == "Tamaño") {
+			tamano.add(elemMenu);
+			
+			elemMenu.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", tam));
+		}
+		
+		//elemMenu.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tam));
+	}
+	
+	/*private class GestionaEventos implements ActionListener{
+
+		String tipoTexto, menu;
+		int estiloLetra, tamLetra;
+		
+		GestionaEventos(String elemento, String texto2, int estilo2, int tamaLetra){
+			
+			tipoTexto = texto2;
+			estiloLetra = estilo2;
+			tamLetra = tamaLetra;
+			menu = elemento;
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			
+			letras = miArea.getFont();
+			
+			if (menu == "Arial" || menu == "Verdana" || menu == "Times New Roman") {
+				
+				estiloLetra = letras.getStyle();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "Cursiva" || menu == "Negrita") {
+				if(letras.getStyle() == 1 || letras.getStyle() == 2) {
+					
+					estiloLetra = 3;
+					
+				}
+				
+				tipoTexto = letras.getFontName();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "12" || menu == "16" || menu == "20" || menu == "24") {
+				
+				estiloLetra = letras.getStyle();
+				tipoTexto = letras.getFontName();
+				
+			}
+			
+			miArea.setFont(new Font(tipoTexto, estiloLetra, tamLetra));
+			
+		}
+		
+	}
+	
+	private class GestionaMenu implements ActionListener{
+
+		public void actionPerformed(ActionEvent e) {
+			
+			miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+			
+		}
+		
+	}*/
+	
+	JTextPane miArea;
+	JMenu fuente, estilo, tamano;
+	Font letras;
+	JButton negritaBarra, cursivaBarra, subrayarBarra, azulBarra, rojoBarra, amarilloBarra, izquierdaBarra, centroBarra, derechaBarra,
+	justificadoBarra;
+	JToolBar miBarra;
+}
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-12-23 16:14:16.327
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-12-23 16:14:16.328
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-12-23 16:14:19.873
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package practicas_guiadas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.text.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P1ProcesadorTexto {
+
+	public static void main(String[] args) {
+		
+		MenuProcesador miMarco = new MenuProcesador();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class MenuProcesador extends JFrame{
+	
+	public MenuProcesador() {
+		
+		setBounds(500, 300, 550, 400);
+		LaminaProcesador miLamina = new LaminaProcesador();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class LaminaProcesador extends JPanel{
+	
+	public LaminaProcesador(){
+		
+		setLayout(new BorderLayout());
+		JPanel laminaMenu = new JPanel();
+		JMenuBar barra = new JMenuBar();
+		miArea = new JTextPane();
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		fuente = new JMenu("Fuente");
+		estilo = new JMenu("Estilo");
+		tamano = new JMenu("Tamaño");
+		
+		configuraMenu("Arial", "Fuente", "Arial", 9, 10, "");
+		configuraMenu("Verdana", "Fuente", "Verdana", 9, 10, "");
+		configuraMenu("Times New Roman", "Fuente", "Times New Roman", 9, 10, "");
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("Negrita", "Estilo", "", Font.BOLD, 1, "src\\Graficos\\negrita.gif");
+		configuraMenu("Cursiva", "Estilo", "", Font.ITALIC, 1, "src\\Graficos\\cursiva.gif");*/
+		
+		JCheckBoxMenuItem negrita = new JCheckBoxMenuItem("Negrita", new ImageIcon("src\\Graficos\\negrita.gif"));
+		JCheckBoxMenuItem cursiva = new JCheckBoxMenuItem("Cursiva", new ImageIcon("src\\Graficos\\cursiva.gif"));
+		
+		negrita.addActionListener(new StyledEditorKit.BoldAction());
+		cursiva.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("12", "Tamaño", "", 9, 12, "");
+		configuraMenu("16", "Tamaño", "", 9, 16, "");
+		configuraMenu("20", "Tamaño", "", 9, 20, "");
+		configuraMenu("24", "Tamaño", "", 9, 24, "");*/
+		
+		ButtonGroup tamanoLetra = new ButtonGroup();
+		
+		JRadioButtonMenuItem doce = new JRadioButtonMenuItem("12");
+		JRadioButtonMenuItem dieciseis = new JRadioButtonMenuItem("16");
+		JRadioButtonMenuItem veinte = new JRadioButtonMenuItem("20");
+		JRadioButtonMenuItem veinticuatro = new JRadioButtonMenuItem("24");
+		
+		veinticuatro.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK));
+		
+		tamanoLetra.add(doce);
+		tamanoLetra.add(dieciseis);
+		tamanoLetra.add(veinte);
+		tamanoLetra.add(veinticuatro);
+		
+		doce.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 12));
+		dieciseis.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 16));
+		veinte.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 20));
+		veinticuatro.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 24));
+		
+		tamano.add(doce);
+		tamano.add(dieciseis);
+		tamano.add(veinte);
+		tamano.add(veinticuatro);
+		
+		//tamano = new JMenu("Tamaño");
+		//-----------------------------------------------------------------------------------------------------------------
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*JMenuItem arial = new JMenuItem("Arial");
+		JMenuItem verdana = new JMenuItem("Verdana");
+		JMenuItem timesNewRoman = new JMenuItem("Times New Roman");
+		JMenuItem negrita = new JMenuItem("Negrita");
+		JMenuItem cursiva = new JMenuItem("Cursiva");
+		JMenuItem tam12 = new JMenuItem("12");
+		JMenuItem tam16 = new JMenuItem("16");
+		JMenuItem tam20 = new JMenuItem("20");
+		JMenuItem tam24 = new JMenuItem("24");*/
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*fuente.add(arial);
+		fuente.add(verdana);
+		fuente.add(timesNewRoman);
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		tamano.add(tam12);
+		tamano.add(tam16);
+		tamano.add(tam20);
+		tamano.add(tam24);
+		
+		verdana.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		arial.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Arial", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		timesNewRoman.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+				
+			}
+		});*/
+		//-----------------------------------------------------------------------------------------------------------------
+		barra.add(fuente);
+		barra.add(estilo);
+		barra.add(tamano);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		laminaMenu.add(barra);
+		
+		add(laminaMenu, BorderLayout.NORTH);
+		add(miArea, BorderLayout.CENTER);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		JPopupMenu emergente = new JPopupMenu();
+		JMenuItem negritaE = new JMenuItem("Negrita");
+		JMenuItem cursivaE = new JMenuItem("Cursiva");
+		
+		negritaE.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaE.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		emergente.add(negritaE);
+		emergente.add(cursivaE);
+				
+		miArea.setComponentPopupMenu(emergente);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		//Barra de Herramientas
+		/*JToolBar miBarra = new JToolBar();
+		
+		JButton negritaBarra = new JButton(new ImageIcon("src\\Graficos\\negrita.gif"));
+		JButton cursivaBarra = new JButton(new ImageIcon("src\\Graficos\\cursiva.gif"));
+		JButton subrayarBarra = new JButton(new ImageIcon("src\\Graficos\\Subrayar.gif"));
+		JButton azulBarra = new JButton(new ImageIcon("src\\Graficos\\Azul.gif"));
+		JButton rojoBarra = new JButton(new ImageIcon("src\\Graficos\\Rojo.gif"));
+		JButton amarilloBarra = new JButton(new ImageIcon("src\\Graficos\\Amarillo.gif"));
+		JButton izquierdaBarra = new JButton(new ImageIcon("src\\Graficos\\izquierda.gif"));
+		JButton centroBarra = new JButton(new ImageIcon("src\\Graficos\\centrado.gif"));
+		JButton derechaBarra = new JButton(new ImageIcon("src\\Graficos\\derecha.gif"));
+		JButton justificadoBarra = new JButton(new ImageIcon("src\\Graficos\\justificado.gif"));
+		
+		negritaBarra.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaBarra.addActionListener(new StyledEditorKit.ItalicAction());
+		subrayarBarra.addActionListener(new StyledEditorKit.UnderlineAction());
+		amarilloBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Amarillo", Color.YELLOW));
+		azulBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Azul", Color.BLUE));
+		rojoBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Rojo", Color.RED));
+		izquierdaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Izquierda", 0));
+		centroBarra.addActionListener(new StyledEditorKit.AlignmentAction("Centrado", 1));
+		derechaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Derecha", 2));
+		justificadoBarra.addActionListener(new StyledEditorKit.AlignmentAction("Justificado", 3));
+		
+		miBarra.add(negritaBarra);
+		miBarra.add(cursivaBarra);
+		miBarra.add(subrayarBarra);
+		miBarra.add(amarilloBarra);
+		miBarra.add(azulBarra);
+		miBarra.add(rojoBarra);
+		miBarra.add(izquierdaBarra);
+		miBarra.add(centroBarra);
+		miBarra.add(derechaBarra);
+		miBarra.add(justificadoBarra);*/
+		
+		miBarra.setOrientation(1);
+		add(miBarra, BorderLayout.WEST);
+	}
+	
+	public JButton configuraBarra(String)
+	
+	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tam, String rutaMenu) {
+		
+		JMenuItem elemMenu = new JMenuItem(rotulo, new ImageIcon(rutaMenu));
+		
+		if(menu == "Fuente") {
+			
+			if(tipoLetra == "Arial") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Arial"));
+				
+			}else if(tipoLetra == "Verdana") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Verdana"));
+				
+			}else if(tipoLetra == "Times New Roman") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Times New Roman"));
+				
+			}
+			
+			fuente.add(elemMenu);
+			
+		}else if(menu == "Estilo") {
+			
+			estilo.add(elemMenu);
+			
+			if(estilos == Font.BOLD) {
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.BoldAction());
+				
+			}else if(estilos == Font.ITALIC);{
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.ItalicAction());
+			}
+			
+		}else if(menu == "Tamaño") {
+			tamano.add(elemMenu);
+			
+			elemMenu.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", tam));
+		}
+		
+		//elemMenu.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tam));
+	}
+	
+	/*private class GestionaEventos implements ActionListener{
+
+		String tipoTexto, menu;
+		int estiloLetra, tamLetra;
+		
+		GestionaEventos(String elemento, String texto2, int estilo2, int tamaLetra){
+			
+			tipoTexto = texto2;
+			estiloLetra = estilo2;
+			tamLetra = tamaLetra;
+			menu = elemento;
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			
+			letras = miArea.getFont();
+			
+			if (menu == "Arial" || menu == "Verdana" || menu == "Times New Roman") {
+				
+				estiloLetra = letras.getStyle();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "Cursiva" || menu == "Negrita") {
+				if(letras.getStyle() == 1 || letras.getStyle() == 2) {
+					
+					estiloLetra = 3;
+					
+				}
+				
+				tipoTexto = letras.getFontName();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "12" || menu == "16" || menu == "20" || menu == "24") {
+				
+				estiloLetra = letras.getStyle();
+				tipoTexto = letras.getFontName();
+				
+			}
+			
+			miArea.setFont(new Font(tipoTexto, estiloLetra, tamLetra));
+			
+		}
+		
+	}
+	
+	private class GestionaMenu implements ActionListener{
+
+		public void actionPerformed(ActionEvent e) {
+			
+			miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+			
+		}
+		
+	}*/
+	
+	JTextPane miArea;
+	JMenu fuente, estilo, tamano;
+	Font letras;
+	JButton negritaBarra, cursivaBarra, subrayarBarra, azulBarra, rojoBarra, amarilloBarra, izquierdaBarra, centroBarra, derechaBarra,
+	justificadoBarra;
+	JToolBar miBarra;
+}
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-12-23 16:14:19.875
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-12-23 16:14:19.876
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-12-23 16:14:20.576
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package practicas_guiadas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.text.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P1ProcesadorTexto {
+
+	public static void main(String[] args) {
+		
+		MenuProcesador miMarco = new MenuProcesador();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class MenuProcesador extends JFrame{
+	
+	public MenuProcesador() {
+		
+		setBounds(500, 300, 550, 400);
+		LaminaProcesador miLamina = new LaminaProcesador();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class LaminaProcesador extends JPanel{
+	
+	public LaminaProcesador(){
+		
+		setLayout(new BorderLayout());
+		JPanel laminaMenu = new JPanel();
+		JMenuBar barra = new JMenuBar();
+		miArea = new JTextPane();
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		fuente = new JMenu("Fuente");
+		estilo = new JMenu("Estilo");
+		tamano = new JMenu("Tamaño");
+		
+		configuraMenu("Arial", "Fuente", "Arial", 9, 10, "");
+		configuraMenu("Verdana", "Fuente", "Verdana", 9, 10, "");
+		configuraMenu("Times New Roman", "Fuente", "Times New Roman", 9, 10, "");
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("Negrita", "Estilo", "", Font.BOLD, 1, "src\\Graficos\\negrita.gif");
+		configuraMenu("Cursiva", "Estilo", "", Font.ITALIC, 1, "src\\Graficos\\cursiva.gif");*/
+		
+		JCheckBoxMenuItem negrita = new JCheckBoxMenuItem("Negrita", new ImageIcon("src\\Graficos\\negrita.gif"));
+		JCheckBoxMenuItem cursiva = new JCheckBoxMenuItem("Cursiva", new ImageIcon("src\\Graficos\\cursiva.gif"));
+		
+		negrita.addActionListener(new StyledEditorKit.BoldAction());
+		cursiva.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("12", "Tamaño", "", 9, 12, "");
+		configuraMenu("16", "Tamaño", "", 9, 16, "");
+		configuraMenu("20", "Tamaño", "", 9, 20, "");
+		configuraMenu("24", "Tamaño", "", 9, 24, "");*/
+		
+		ButtonGroup tamanoLetra = new ButtonGroup();
+		
+		JRadioButtonMenuItem doce = new JRadioButtonMenuItem("12");
+		JRadioButtonMenuItem dieciseis = new JRadioButtonMenuItem("16");
+		JRadioButtonMenuItem veinte = new JRadioButtonMenuItem("20");
+		JRadioButtonMenuItem veinticuatro = new JRadioButtonMenuItem("24");
+		
+		veinticuatro.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK));
+		
+		tamanoLetra.add(doce);
+		tamanoLetra.add(dieciseis);
+		tamanoLetra.add(veinte);
+		tamanoLetra.add(veinticuatro);
+		
+		doce.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 12));
+		dieciseis.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 16));
+		veinte.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 20));
+		veinticuatro.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 24));
+		
+		tamano.add(doce);
+		tamano.add(dieciseis);
+		tamano.add(veinte);
+		tamano.add(veinticuatro);
+		
+		//tamano = new JMenu("Tamaño");
+		//-----------------------------------------------------------------------------------------------------------------
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*JMenuItem arial = new JMenuItem("Arial");
+		JMenuItem verdana = new JMenuItem("Verdana");
+		JMenuItem timesNewRoman = new JMenuItem("Times New Roman");
+		JMenuItem negrita = new JMenuItem("Negrita");
+		JMenuItem cursiva = new JMenuItem("Cursiva");
+		JMenuItem tam12 = new JMenuItem("12");
+		JMenuItem tam16 = new JMenuItem("16");
+		JMenuItem tam20 = new JMenuItem("20");
+		JMenuItem tam24 = new JMenuItem("24");*/
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*fuente.add(arial);
+		fuente.add(verdana);
+		fuente.add(timesNewRoman);
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		tamano.add(tam12);
+		tamano.add(tam16);
+		tamano.add(tam20);
+		tamano.add(tam24);
+		
+		verdana.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		arial.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Arial", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		timesNewRoman.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+				
+			}
+		});*/
+		//-----------------------------------------------------------------------------------------------------------------
+		barra.add(fuente);
+		barra.add(estilo);
+		barra.add(tamano);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		laminaMenu.add(barra);
+		
+		add(laminaMenu, BorderLayout.NORTH);
+		add(miArea, BorderLayout.CENTER);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		JPopupMenu emergente = new JPopupMenu();
+		JMenuItem negritaE = new JMenuItem("Negrita");
+		JMenuItem cursivaE = new JMenuItem("Cursiva");
+		
+		negritaE.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaE.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		emergente.add(negritaE);
+		emergente.add(cursivaE);
+				
+		miArea.setComponentPopupMenu(emergente);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		//Barra de Herramientas
+		/*JToolBar miBarra = new JToolBar();
+		
+		JButton negritaBarra = new JButton(new ImageIcon("src\\Graficos\\negrita.gif"));
+		JButton cursivaBarra = new JButton(new ImageIcon("src\\Graficos\\cursiva.gif"));
+		JButton subrayarBarra = new JButton(new ImageIcon("src\\Graficos\\Subrayar.gif"));
+		JButton azulBarra = new JButton(new ImageIcon("src\\Graficos\\Azul.gif"));
+		JButton rojoBarra = new JButton(new ImageIcon("src\\Graficos\\Rojo.gif"));
+		JButton amarilloBarra = new JButton(new ImageIcon("src\\Graficos\\Amarillo.gif"));
+		JButton izquierdaBarra = new JButton(new ImageIcon("src\\Graficos\\izquierda.gif"));
+		JButton centroBarra = new JButton(new ImageIcon("src\\Graficos\\centrado.gif"));
+		JButton derechaBarra = new JButton(new ImageIcon("src\\Graficos\\derecha.gif"));
+		JButton justificadoBarra = new JButton(new ImageIcon("src\\Graficos\\justificado.gif"));
+		
+		negritaBarra.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaBarra.addActionListener(new StyledEditorKit.ItalicAction());
+		subrayarBarra.addActionListener(new StyledEditorKit.UnderlineAction());
+		amarilloBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Amarillo", Color.YELLOW));
+		azulBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Azul", Color.BLUE));
+		rojoBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Rojo", Color.RED));
+		izquierdaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Izquierda", 0));
+		centroBarra.addActionListener(new StyledEditorKit.AlignmentAction("Centrado", 1));
+		derechaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Derecha", 2));
+		justificadoBarra.addActionListener(new StyledEditorKit.AlignmentAction("Justificado", 3));
+		
+		miBarra.add(negritaBarra);
+		miBarra.add(cursivaBarra);
+		miBarra.add(subrayarBarra);
+		miBarra.add(amarilloBarra);
+		miBarra.add(azulBarra);
+		miBarra.add(rojoBarra);
+		miBarra.add(izquierdaBarra);
+		miBarra.add(centroBarra);
+		miBarra.add(derechaBarra);
+		miBarra.add(justificadoBarra);*/
+		
+		miBarra.setOrientation(1);
+		add(miBarra, BorderLayout.WEST);
+	}
+	
+	public JButton configuraBarra(String )
+	
+	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tam, String rutaMenu) {
+		
+		JMenuItem elemMenu = new JMenuItem(rotulo, new ImageIcon(rutaMenu));
+		
+		if(menu == "Fuente") {
+			
+			if(tipoLetra == "Arial") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Arial"));
+				
+			}else if(tipoLetra == "Verdana") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Verdana"));
+				
+			}else if(tipoLetra == "Times New Roman") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Times New Roman"));
+				
+			}
+			
+			fuente.add(elemMenu);
+			
+		}else if(menu == "Estilo") {
+			
+			estilo.add(elemMenu);
+			
+			if(estilos == Font.BOLD) {
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.BoldAction());
+				
+			}else if(estilos == Font.ITALIC);{
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.ItalicAction());
+			}
+			
+		}else if(menu == "Tamaño") {
+			tamano.add(elemMenu);
+			
+			elemMenu.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", tam));
+		}
+		
+		//elemMenu.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tam));
+	}
+	
+	/*private class GestionaEventos implements ActionListener{
+
+		String tipoTexto, menu;
+		int estiloLetra, tamLetra;
+		
+		GestionaEventos(String elemento, String texto2, int estilo2, int tamaLetra){
+			
+			tipoTexto = texto2;
+			estiloLetra = estilo2;
+			tamLetra = tamaLetra;
+			menu = elemento;
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			
+			letras = miArea.getFont();
+			
+			if (menu == "Arial" || menu == "Verdana" || menu == "Times New Roman") {
+				
+				estiloLetra = letras.getStyle();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "Cursiva" || menu == "Negrita") {
+				if(letras.getStyle() == 1 || letras.getStyle() == 2) {
+					
+					estiloLetra = 3;
+					
+				}
+				
+				tipoTexto = letras.getFontName();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "12" || menu == "16" || menu == "20" || menu == "24") {
+				
+				estiloLetra = letras.getStyle();
+				tipoTexto = letras.getFontName();
+				
+			}
+			
+			miArea.setFont(new Font(tipoTexto, estiloLetra, tamLetra));
+			
+		}
+		
+	}
+	
+	private class GestionaMenu implements ActionListener{
+
+		public void actionPerformed(ActionEvent e) {
+			
+			miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+			
+		}
+		
+	}*/
+	
+	JTextPane miArea;
+	JMenu fuente, estilo, tamano;
+	Font letras;
+	JButton negritaBarra, cursivaBarra, subrayarBarra, azulBarra, rojoBarra, amarilloBarra, izquierdaBarra, centroBarra, derechaBarra,
+	justificadoBarra;
+	JToolBar miBarra;
+}
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-12-23 16:14:20.579
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-12-23 16:14:20.580
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.core 4 4 2024-12-23 16:14:22.122
+!MESSAGE Exception occurred during compilation unit conversion:
+----------------------------------- SOURCE BEGIN -------------------------------------
+package practicas_guiadas;
+
+import javax.swing.*;
+import javax.swing.event.*;
+import javax.swing.text.*;
+
+import java.awt.*;
+import java.awt.event.*;
+
+public class P1ProcesadorTexto {
+
+	public static void main(String[] args) {
+		
+		MenuProcesador miMarco = new MenuProcesador();
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class MenuProcesador extends JFrame{
+	
+	public MenuProcesador() {
+		
+		setBounds(500, 300, 550, 400);
+		LaminaProcesador miLamina = new LaminaProcesador();
+		add(miLamina);
+		setVisible(true);
+	}
+}
+
+class LaminaProcesador extends JPanel{
+	
+	public LaminaProcesador(){
+		
+		setLayout(new BorderLayout());
+		JPanel laminaMenu = new JPanel();
+		JMenuBar barra = new JMenuBar();
+		miArea = new JTextPane();
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		fuente = new JMenu("Fuente");
+		estilo = new JMenu("Estilo");
+		tamano = new JMenu("Tamaño");
+		
+		configuraMenu("Arial", "Fuente", "Arial", 9, 10, "");
+		configuraMenu("Verdana", "Fuente", "Verdana", 9, 10, "");
+		configuraMenu("Times New Roman", "Fuente", "Times New Roman", 9, 10, "");
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("Negrita", "Estilo", "", Font.BOLD, 1, "src\\Graficos\\negrita.gif");
+		configuraMenu("Cursiva", "Estilo", "", Font.ITALIC, 1, "src\\Graficos\\cursiva.gif");*/
+		
+		JCheckBoxMenuItem negrita = new JCheckBoxMenuItem("Negrita", new ImageIcon("src\\Graficos\\negrita.gif"));
+		JCheckBoxMenuItem cursiva = new JCheckBoxMenuItem("Cursiva", new ImageIcon("src\\Graficos\\cursiva.gif"));
+		
+		negrita.addActionListener(new StyledEditorKit.BoldAction());
+		cursiva.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*configuraMenu("12", "Tamaño", "", 9, 12, "");
+		configuraMenu("16", "Tamaño", "", 9, 16, "");
+		configuraMenu("20", "Tamaño", "", 9, 20, "");
+		configuraMenu("24", "Tamaño", "", 9, 24, "");*/
+		
+		ButtonGroup tamanoLetra = new ButtonGroup();
+		
+		JRadioButtonMenuItem doce = new JRadioButtonMenuItem("12");
+		JRadioButtonMenuItem dieciseis = new JRadioButtonMenuItem("16");
+		JRadioButtonMenuItem veinte = new JRadioButtonMenuItem("20");
+		JRadioButtonMenuItem veinticuatro = new JRadioButtonMenuItem("24");
+		
+		veinticuatro.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_D, InputEvent.CTRL_DOWN_MASK));
+		
+		tamanoLetra.add(doce);
+		tamanoLetra.add(dieciseis);
+		tamanoLetra.add(veinte);
+		tamanoLetra.add(veinticuatro);
+		
+		doce.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 12));
+		dieciseis.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 16));
+		veinte.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 20));
+		veinticuatro.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", 24));
+		
+		tamano.add(doce);
+		tamano.add(dieciseis);
+		tamano.add(veinte);
+		tamano.add(veinticuatro);
+		
+		//tamano = new JMenu("Tamaño");
+		//-----------------------------------------------------------------------------------------------------------------
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*JMenuItem arial = new JMenuItem("Arial");
+		JMenuItem verdana = new JMenuItem("Verdana");
+		JMenuItem timesNewRoman = new JMenuItem("Times New Roman");
+		JMenuItem negrita = new JMenuItem("Negrita");
+		JMenuItem cursiva = new JMenuItem("Cursiva");
+		JMenuItem tam12 = new JMenuItem("12");
+		JMenuItem tam16 = new JMenuItem("16");
+		JMenuItem tam20 = new JMenuItem("20");
+		JMenuItem tam24 = new JMenuItem("24");*/
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		/*fuente.add(arial);
+		fuente.add(verdana);
+		fuente.add(timesNewRoman);
+		estilo.add(negrita);
+		estilo.add(cursiva);
+		tamano.add(tam12);
+		tamano.add(tam16);
+		tamano.add(tam20);
+		tamano.add(tam24);
+		
+		verdana.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		arial.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Arial", Font.PLAIN, 12));
+				
+			}
+		});
+		
+		timesNewRoman.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				
+				miArea.setFont(new Font("Times New Roman", Font.PLAIN, 12));
+				
+			}
+		});*/
+		//-----------------------------------------------------------------------------------------------------------------
+		barra.add(fuente);
+		barra.add(estilo);
+		barra.add(tamano);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		laminaMenu.add(barra);
+		
+		add(laminaMenu, BorderLayout.NORTH);
+		add(miArea, BorderLayout.CENTER);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		JPopupMenu emergente = new JPopupMenu();
+		JMenuItem negritaE = new JMenuItem("Negrita");
+		JMenuItem cursivaE = new JMenuItem("Cursiva");
+		
+		negritaE.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaE.addActionListener(new StyledEditorKit.ItalicAction());
+		
+		emergente.add(negritaE);
+		emergente.add(cursivaE);
+				
+		miArea.setComponentPopupMenu(emergente);
+		
+		//-----------------------------------------------------------------------------------------------------------------
+		//Barra de Herramientas
+		/*JToolBar miBarra = new JToolBar();
+		
+		JButton negritaBarra = new JButton(new ImageIcon("src\\Graficos\\negrita.gif"));
+		JButton cursivaBarra = new JButton(new ImageIcon("src\\Graficos\\cursiva.gif"));
+		JButton subrayarBarra = new JButton(new ImageIcon("src\\Graficos\\Subrayar.gif"));
+		JButton azulBarra = new JButton(new ImageIcon("src\\Graficos\\Azul.gif"));
+		JButton rojoBarra = new JButton(new ImageIcon("src\\Graficos\\Rojo.gif"));
+		JButton amarilloBarra = new JButton(new ImageIcon("src\\Graficos\\Amarillo.gif"));
+		JButton izquierdaBarra = new JButton(new ImageIcon("src\\Graficos\\izquierda.gif"));
+		JButton centroBarra = new JButton(new ImageIcon("src\\Graficos\\centrado.gif"));
+		JButton derechaBarra = new JButton(new ImageIcon("src\\Graficos\\derecha.gif"));
+		JButton justificadoBarra = new JButton(new ImageIcon("src\\Graficos\\justificado.gif"));
+		
+		negritaBarra.addActionListener(new StyledEditorKit.BoldAction());
+		cursivaBarra.addActionListener(new StyledEditorKit.ItalicAction());
+		subrayarBarra.addActionListener(new StyledEditorKit.UnderlineAction());
+		amarilloBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Amarillo", Color.YELLOW));
+		azulBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Azul", Color.BLUE));
+		rojoBarra.addActionListener(new StyledEditorKit.ForegroundAction("Poner Rojo", Color.RED));
+		izquierdaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Izquierda", 0));
+		centroBarra.addActionListener(new StyledEditorKit.AlignmentAction("Centrado", 1));
+		derechaBarra.addActionListener(new StyledEditorKit.AlignmentAction("Derecha", 2));
+		justificadoBarra.addActionListener(new StyledEditorKit.AlignmentAction("Justificado", 3));
+		
+		miBarra.add(negritaBarra);
+		miBarra.add(cursivaBarra);
+		miBarra.add(subrayarBarra);
+		miBarra.add(amarilloBarra);
+		miBarra.add(azulBarra);
+		miBarra.add(rojoBarra);
+		miBarra.add(izquierdaBarra);
+		miBarra.add(centroBarra);
+		miBarra.add(derechaBarra);
+		miBarra.add(justificadoBarra);*/
+		
+		miBarra.setOrientation(1);
+		add(miBarra, BorderLayout.WEST);
+	}
+	
+	public JButton configuraBarra(String ruta)
+	
+	public void configuraMenu(String rotulo, String menu, String tipoLetra, int estilos, int tam, String rutaMenu) {
+		
+		JMenuItem elemMenu = new JMenuItem(rotulo, new ImageIcon(rutaMenu));
+		
+		if(menu == "Fuente") {
+			
+			if(tipoLetra == "Arial") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Arial"));
+				
+			}else if(tipoLetra == "Verdana") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Verdana"));
+				
+			}else if(tipoLetra == "Times New Roman") {
+				
+				elemMenu.addActionListener(new StyledEditorKit.FontFamilyAction("CambiaLetra", "Times New Roman"));
+				
+			}
+			
+			fuente.add(elemMenu);
+			
+		}else if(menu == "Estilo") {
+			
+			estilo.add(elemMenu);
+			
+			if(estilos == Font.BOLD) {
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_N, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.BoldAction());
+				
+			}else if(estilos == Font.ITALIC);{
+				
+				elemMenu.setAccelerator(KeyStroke.getKeyStroke(KeyEvent.VK_K, InputEvent.CTRL_DOWN_MASK));
+				
+				elemMenu.addActionListener(new StyledEditorKit.ItalicAction());
+			}
+			
+		}else if(menu == "Tamaño") {
+			tamano.add(elemMenu);
+			
+			elemMenu.addActionListener(new StyledEditorKit.FontSizeAction("cambia Tamaño", tam));
+		}
+		
+		//elemMenu.addActionListener(new GestionaEventos(rotulo, tipoLetra, estilos, tam));
+	}
+	
+	/*private class GestionaEventos implements ActionListener{
+
+		String tipoTexto, menu;
+		int estiloLetra, tamLetra;
+		
+		GestionaEventos(String elemento, String texto2, int estilo2, int tamaLetra){
+			
+			tipoTexto = texto2;
+			estiloLetra = estilo2;
+			tamLetra = tamaLetra;
+			menu = elemento;
+		}
+		
+		public void actionPerformed(ActionEvent e) {
+			
+			letras = miArea.getFont();
+			
+			if (menu == "Arial" || menu == "Verdana" || menu == "Times New Roman") {
+				
+				estiloLetra = letras.getStyle();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "Cursiva" || menu == "Negrita") {
+				if(letras.getStyle() == 1 || letras.getStyle() == 2) {
+					
+					estiloLetra = 3;
+					
+				}
+				
+				tipoTexto = letras.getFontName();
+				tamLetra = letras.getSize();
+				
+			}else if(menu == "12" || menu == "16" || menu == "20" || menu == "24") {
+				
+				estiloLetra = letras.getStyle();
+				tipoTexto = letras.getFontName();
+				
+			}
+			
+			miArea.setFont(new Font(tipoTexto, estiloLetra, tamLetra));
+			
+		}
+		
+	}
+	
+	private class GestionaMenu implements ActionListener{
+
+		public void actionPerformed(ActionEvent e) {
+			
+			miArea.setFont(new Font("Verdana", Font.PLAIN, 12));
+			
+		}
+		
+	}*/
+	
+	JTextPane miArea;
+	JMenu fuente, estilo, tamano;
+	Font letras;
+	JButton negritaBarra, cursivaBarra, subrayarBarra, azulBarra, rojoBarra, amarilloBarra, izquierdaBarra, centroBarra, derechaBarra,
+	justificadoBarra;
+	JToolBar miBarra;
+}
+----------------------------------- SOURCE END -------------------------------------
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 2 2024-12-23 16:14:22.125
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.jdt.ui".
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
+
+!ENTRY org.eclipse.jdt.ui 4 0 2024-12-23 16:14:22.126
+!MESSAGE Error in JDT Core during reconcile
+!STACK 0
+java.lang.IllegalArgumentException
+	at org.eclipse.jdt.core.dom.ASTNode.setSourceRange(ASTNode.java:3477)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:787)
+	at org.eclipse.jdt.core.dom.ASTConverter.buildBodyDeclarations(ASTConverter.java:208)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:3567)
+	at org.eclipse.jdt.core.dom.ASTConverter.convert(ASTConverter.java:1595)
+	at org.eclipse.jdt.core.dom.AST.convertCompilationUnit(AST.java:646)
+	at org.eclipse.jdt.internal.core.CompilationUnit.buildStructure(CompilationUnit.java:194)
+	at org.eclipse.jdt.internal.core.Openable.generateInfos(Openable.java:245)
+	at org.eclipse.jdt.internal.core.JavaElement.openWhenClosed(JavaElement.java:585)
+	at org.eclipse.jdt.internal.core.CompilationUnit.makeConsistent(CompilationUnit.java:1129)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.makeConsistent(ReconcileWorkingCopyOperation.java:166)
+	at org.eclipse.jdt.internal.core.ReconcileWorkingCopyOperation.executeOperation(ReconcileWorkingCopyOperation.java:92)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.run(JavaModelOperation.java:739)
+	at org.eclipse.jdt.internal.core.JavaModelOperation.runOperation(JavaModelOperation.java:804)
+	at org.eclipse.jdt.internal.core.CompilationUnit.reconcile(CompilationUnit.java:1303)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:132)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy$1.run(JavaReconcilingStrategy.java:94)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:47)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:91)
+	at org.eclipse.jdt.internal.ui.text.java.JavaReconcilingStrategy.reconcile(JavaReconcilingStrategy.java:158)
+	at org.eclipse.jdt.internal.ui.text.CompositeReconcilingStrategy.reconcile(CompositeReconcilingStrategy.java:94)
+	at org.eclipse.jdt.internal.ui.text.JavaCompositeReconcilingStrategy.reconcile(JavaCompositeReconcilingStrategy.java:107)
+	at org.eclipse.jface.text.reconciler.MonoReconciler.process(MonoReconciler.java:78)
+	at org.eclipse.jface.text.reconciler.AbstractReconciler$BackgroundThread.run(AbstractReconciler.java:207)
