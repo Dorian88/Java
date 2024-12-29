@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename type &apos;interfaces_graficas.G28DisposicionLibre&apos; to &apos;G38DisposicionLibre&apos;&#x0D;&#x0A;- Original project: &apos;Primeros Pasos&apos;&#x0D;&#x0A;- Original element: &apos;interfaces_graficas.G28DisposicionLibre&apos;&#x0D;&#x0A;- Renamed element: &apos;interfaces_graficas.G38DisposicionLibre&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename type &apos;G28DisposicionLibre&apos;" flags="589830" id="org.eclipse.jdt.ui.rename.type" input="/src&lt;interfaces_graficas{G28DisposicionLibre.java[G28DisposicionLibre" matchStrategy="1" name="G38DisposicionLibre" qualified="false" references="true" similarDeclarations="false" stamp="1735254349793" textual="false" version="1.0"/>
+</session>

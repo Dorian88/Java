@@ -1,0 +1,28 @@
+package interfaces_graficas;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class G36PruebaDisposiciones {
+
+	public static void main(String[] args) {
+		
+		MarcoCaja miMarco = new MarcoCaja();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+class MarcoCaja extends JFrame{
+	
+	public MarcoCaja() {
+		setTitle("Marco en la Caja");
+		
+		setBounds(600, 350, 200, 200);
+	}
+}

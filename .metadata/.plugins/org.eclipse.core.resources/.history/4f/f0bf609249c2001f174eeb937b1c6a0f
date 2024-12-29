@@ -1,0 +1,44 @@
+package interfaces_graficas;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class G37DisposicionMuelle {
+
+	public static void main(String[] args) {
+		
+		MarcoMuelle miMarco = new MarcoMuelle();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+}
+
+class MarcoMuelle extends JFrame{
+	
+	public MarcoMuelle() {
+		
+		setBounds(200, 300, 1000, 350);
+		
+		laminaMuelle miLamina = new laminaMuelle();
+		
+		add(miLamina);
+		
+		setVisible(true);
+	}
+}
+
+class laminaMuelle extends JPanel{
+	
+	public laminaMuelle() {
+		
+		JButton boton1 = new JButton("Boton 1");
+		JButton boton2 = new JButton("Boton 2");
+		JButton boton3 = new JButton("Boton 3");
+		
+		add(boton1);
+		add(boton2);
+		add(boton3);
+	}
+}
