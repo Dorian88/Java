@@ -1,0 +1,28 @@
+package practicas_guiadas.P2CuadrosDialogos;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class MarcoDialogos extends JFrame{
+	
+	public MarcoDialogos() {
+		
+		setTitle("Cuadros de Dialogos");
+		
+		setBounds(500, 300, 600, 450);
+		
+		JPanel laminaCuadricula = new JPanel();
+		
+		laminaCuadricula.setLayout(new GridLayout(2, 3));
+		
+		String primero[] = {"Mensaje", "Confirmar", "Opción", "Entrada"};
+		
+		laminaTipo = new LaminaBotones("Tipo", primero);
+		
+		laminaCuadricula.add(laminaTipo);
+		
+		add(laminaCuadricula);
+	}
+	
+	private LaminaBotones laminaTipo;
+}

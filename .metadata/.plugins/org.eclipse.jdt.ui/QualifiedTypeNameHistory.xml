@@ -13,4 +13,5 @@
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.ForegroundAction"/>
     <fullyQualifiedTypeName name="javax.swing.text.StyledEditorKit.AlignmentAction"/>
     <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="java.awt.geom.Rectangle2D.Double"/>
 </qualifiedTypeNameHistroy>

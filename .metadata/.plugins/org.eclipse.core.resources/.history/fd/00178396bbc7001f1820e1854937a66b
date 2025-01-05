@@ -1,0 +1,13 @@
+package practicas_guiadas.P2CuadrosDialogos;
+
+import javax.swing.*;
+
+public class MarcoDialogos extends JFrame{
+	
+	public MarcoDialogos() {
+		
+		setTitle("Cuadros de Dialogos");
+		
+		setBounds(500, 300, 600, 450);
+	}
+}

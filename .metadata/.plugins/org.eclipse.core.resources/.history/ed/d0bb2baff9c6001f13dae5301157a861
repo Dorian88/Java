@@ -1,0 +1,41 @@
+package practicas_guiadas;
+
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
+
+public class P2CuadrosDialogos {
+
+	public static void main(String[] args) {
+		
+		MarcoDialogos miMarco = new MarcoDialogos();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+class MarcoDialogos extends JFrame{
+	
+	public MarcoDialogos() {
+		
+		setTitle("Cuadros de Dialogos");
+		
+		setBounds(300, 300, 600, 450);
+		
+		JPanel laminaCuadricula = new JPanel();
+		
+		laminaCuadricula.setLayout(new GridLayout(2, 3));
+	}
+}
+
+class LaminaCuadricula extends JPanel{
+	
+	public LaminaCuadricula(){
+		
+		
+	}
+}

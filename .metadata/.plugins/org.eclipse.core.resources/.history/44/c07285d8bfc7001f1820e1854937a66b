@@ -1,0 +1,11 @@
+package practicas_guiadas.P2CuadrosDialogos;
+
+import javax.swing.*;
+
+public class LaminaBotones{
+	
+	public LaminaBotones() {
+		
+		
+	}
+}

@@ -1,0 +1,62 @@
+package practicas_guiadas.P2CuadrosDialogos;
+
+import javax.swing.*;
+import java.awt.*;
+
+public class MarcoDialogos extends JFrame{
+	
+	public MarcoDialogos() {
+		
+		setTitle("Cuadros de Dialogos");
+		
+		setBounds(500, 300, 600, 450);
+		
+		JPanel laminaCuadricula = new JPanel();
+		
+		laminaCuadricula.setLayout(new GridLayout(2, 3));
+		
+		String primero[] = {"Mensaje", "Confirmar", "Opción", "Entrada"};
+		
+		laminaTipo = new LaminaBotones("Tipo", primero);
+		laminaTipoMensaje = new LaminaBotones("Tipo de Mensaje", new String[] {
+				"ERROR_MESSAGE",
+				"INFORMATION_MESSAGE",
+				"QUESTION_MESSAGE",
+				"PLAIN_MESSAGE"
+		});
+		laminaMensaje = new LaminaBotones("Mensaje", new String[] {
+				"Cadena",
+				"Icono",
+				"Componente",
+				"Otros",
+				"Object[]"
+		});
+		laminaTipoOpcion = new LaminaBotones("Confirmar", new String[] {
+				"DEFAULT_OPTION",
+				"YES_NO_OPTION",
+				"YES_NO_CANCEL_OPTION",
+				"OK_CANCEL_OPTION"
+		});
+		laminaOpciones = new LaminaBotones("Opcion", new String[] {
+				"Sreing[]",
+				"Icon[]",
+				"Object[]"
+		});
+		laminaEntrada = new LaminaBotones("Entrada", new String[] {
+				"Campo de Texto",
+				"Combo"
+		});
+		
+		
+		laminaCuadricula.add(laminaTipo);
+		laminaCuadricula.add(laminaTipoMensaje);
+		laminaCuadricula.add(laminaMensaje);
+		laminaCuadricula.add(laminaTipoOpcion);
+		laminaCuadricula.add(laminaOpciones);
+		laminaCuadricula.add(laminaEntrada);
+		
+		add(laminaCuadricula);
+	}
+	
+	private LaminaBotones laminaTipo, laminaTipoMensaje, laminaMensaje, laminaTipoOpcion, laminaOpciones, laminaEntrada;
+}
