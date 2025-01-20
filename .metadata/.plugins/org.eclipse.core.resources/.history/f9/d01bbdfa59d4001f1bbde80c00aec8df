@@ -1,0 +1,29 @@
+package Excepciones;
+
+import javax.swing.*;
+
+public class E5VariasExcepciones {
+
+	public static void main(String[] args) {
+		
+		try {
+			
+			division();
+			
+		}catch(Exception e) {
+			
+			System.out.println("Ha ocurrido un error");
+			
+		}
+
+	}
+	
+	static void division() {
+		
+		int num1 = Integer.parseInt(JOptionPane.showInputDialog("Introduce el dividendo"));
+		int num2 = Integer.parseInt(JOptionPane.showInputDialog("Introduce el divisor"));
+		
+		System.out.println("El resultados es: " + num1/num2);
+	}
+
+}

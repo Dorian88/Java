@@ -1,0 +1,10 @@
+package Excepciones;
+
+public class E5VariasExcepciones {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
