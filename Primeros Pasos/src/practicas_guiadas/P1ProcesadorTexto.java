@@ -1,3 +1,5 @@
+//Programa que hace un procesador de texto.
+
 package practicas_guiadas;
 
 import javax.swing.*;

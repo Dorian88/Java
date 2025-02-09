@@ -1,0 +1,63 @@
+package Hilos;
+
+public class H2SincronizarHilos {
+
+	public static void main(String[] args) {
+		
+		HilosVarios hilo1 = new HilosVarios();
+		HilosVarios hilo2 = new HilosVarios();
+		
+		hilo1.start();
+		
+		try {
+			
+			hilo1.join();
+			
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+			
+		}
+		
+		System.out.println("\n");
+		
+		hilo2.start();
+		
+		try {
+			
+			hilo2.join();
+			
+		} catch (InterruptedException e) {
+			
+			e.printStackTrace();
+			
+		}
+		
+		
+		System.out.println("\nHa terminado las tareas");
+
+	}
+
+}
+
+class HilosVarios extends Thread{
+	
+	public void run() {
+		
+		for(int i = 0; i < 15; i++) {
+			
+			System.out.println("Ejecutando Hilo " + getName());
+			
+			try {
+				
+				Thread.sleep(500);
+				
+			} catch (InterruptedException e) {
+				
+				e.printStackTrace();
+				
+			}
+		}
+	}
+	
+}

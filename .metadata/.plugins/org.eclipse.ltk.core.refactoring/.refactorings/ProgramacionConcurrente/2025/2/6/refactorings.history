@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;uso_hilos&apos; to &apos;Hilos&apos;&#x0D;&#x0A;- Original project: &apos;ProgramacionConcurrente&apos;&#x0D;&#x0A;- Original element: &apos;ProgramacionConcurrente/src/uso_hilos&apos;&#x0D;&#x0A;- Renamed element: &apos;ProgramacionConcurrente/src/Hilos&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;uso_hilos&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;uso_hilos" name="Hilos" qualified="false" references="true" stamp="1738617247581" textual="false" version="1.0"/>
+</session>

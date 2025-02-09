@@ -1,3 +1,5 @@
+//Programa que muestra diferentes tipos de mensaje mediante cuadros de dialogo
+
 package practicas_guiadas.P2CuadrosDialogos;
 
 import javax.swing.*;
