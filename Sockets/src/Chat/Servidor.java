@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.io.*;
 import java.net.*;
+import java.util.*;
 
 public class Servidor {
 
@@ -48,6 +49,7 @@ class MarcoServidor extends JFrame implements Runnable{
 			ServerSocket servidor = new ServerSocket(9999);
 			
 			String nick, ip, mensaje;
+			ArrayList<String> listaIp = new ArrayList<String>();
 			PaqueteEnvio paqueteRecibido;
 			
 			while(true) {
@@ -76,6 +78,24 @@ class MarcoServidor extends JFrame implements Runnable{
 					InetAddress localizacion = miSocket.getInetAddress();
 					String ipRemota = localizacion.getHostAddress();
 					System.out.println("Online: " + ipRemota);
+					
+					listaIp.add(ipRemota);
+					
+					paqueteRecibido.setIps(listaIp);
+					
+					for (String z : listaIp) {
+						
+						System.out.println("Array: " + z);
+						
+						Socket enviaDestinatario = new Socket(z, 9090);
+						ObjectOutputStream paqueteReenvio = new ObjectOutputStream(enviaDestinatario.getOutputStream());
+						paqueteReenvio.writeObject(paqueteRecibido);
+						
+						paqueteReenvio.close();
+						enviaDestinatario.close();
+					}
+					
+					
 				}
 				
 				paqueteDatos.close();

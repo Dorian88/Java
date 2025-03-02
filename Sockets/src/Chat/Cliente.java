@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.io.*;
 import java.net.*;
+import java.util.*;
 
 public class Cliente {
 
@@ -73,9 +74,9 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 		ip = new JComboBox();
 		/*ip.addItem("Usuario 1");
 		ip.addItem("Usuario 2");
-		ip.addItem("Usuario 3");*/
+		ip.addItem("Usuario 3");
 		
-		ip.addItem("192.168.1.4");
+		ip.addItem("192.168.1.4");*/
 		
 		add(ip);
 		
@@ -140,7 +141,26 @@ class LaminaMarcoCliente extends JPanel implements Runnable{
 				ObjectInputStream flujoEntrada = new ObjectInputStream(cliente.getInputStream());
 				
 				paqueteRecibido = (PaqueteEnvio) flujoEntrada.readObject();
-				campoChat.append("\n" + paqueteRecibido.getNick() + ": " + paqueteRecibido.getMensaje());
+				
+				if (!paqueteRecibido.getMensaje().equals(" Online")) {
+					
+					campoChat.append("\n" + paqueteRecibido.getNick() + ": " + paqueteRecibido.getMensaje());
+					
+				}else {
+					//campoChat.append("\n" + paqueteRecibido.getIps());
+					
+					ArrayList<String> ipsMenu = new ArrayList<String>();
+					
+					ipsMenu = paqueteRecibido.getIps();
+					
+					ip.removeAllItems();
+					
+					for (String z : ipsMenu) {
+						
+						ip.addItem(z);
+					}
+				}
+				
 			}
 			
 		}catch(Exception e) {
@@ -184,6 +204,15 @@ class PaqueteEnvio implements Serializable{
 	public void setMensaje(String mensaje) {
 		this.mensaje = mensaje;
 	}
+	
+	public ArrayList<String> getIps() {
+		return ips;
+	}
+
+	public void setIps(ArrayList<String> ips) {
+		this.ips = ips;
+	}
 
 	private String nick, ip, mensaje;
+	private ArrayList<String> ips;
 }

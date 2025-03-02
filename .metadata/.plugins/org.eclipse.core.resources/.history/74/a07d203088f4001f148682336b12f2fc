@@ -1,0 +1,26 @@
+package controlador;
+
+import java.awt.event.*;
+import modelo.*;
+import vista.*;
+
+public class ControladorBotonEjecuta implements ActionListener{
+
+	public ControladorBotonEjecuta(MarcoAplicacion2 elMarco) {
+		
+		this.elMarco = elMarco;
+		
+	}
+	public void actionPerformed(ActionEvent e) {
+		
+		String seleccionSeccion = (String)elMarco.secciones.getSelectedItem();
+		String seleccionPais = (String)elMarco.paises.getSelectedItem();
+		
+		elMarco.resultado.append(obj.filtraBD(seleccionSeccion, seleccionPais));
+		elMarco.resultado.append("\n");
+	}
+	
+	private MarcoAplicacion2 elMarco;
+	EjecutaConsultas obj = new EjecutaConsultas();
+
+}

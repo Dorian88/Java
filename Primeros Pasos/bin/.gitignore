@@ -7,9 +7,6 @@
 /Programacion_Generica/
 /Serializacion/
 /interfaces_graficas/
-/paquete_pruebas/
-/poo/
-/practicas_guiadas/
 /C01Saludo.class
 /C02UsoVariables.class
 /C03UsoConstantesOperadores.class
@@ -30,4 +27,6 @@
 /C17EjemploArrayMatrices.class
 /C18UsoTallas$Talla.class
 /C18UsoTallas.class
-/Hilos/
+/paquete_pruebas/
+/poo/
+/practicas_guiadas/
