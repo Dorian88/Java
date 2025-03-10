@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;aplicacionf&apos; to &apos;aplicacion_final&apos;&#x0D;&#x0A;- Original project: &apos;BDJDBC&apos;&#x0D;&#x0A;- Original element: &apos;BDJDBC/src/aplicacionf&apos;&#x0D;&#x0A;- Renamed element: &apos;BDJDBC/src/aplicacion_final&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;aplicacionf&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;aplicacionf" name="aplicacion_final" qualified="false" references="true" stamp="1741129046597" textual="false" version="1.0"/>
+</session>

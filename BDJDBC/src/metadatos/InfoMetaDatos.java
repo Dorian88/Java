@@ -1,0 +1,104 @@
+package metadatos;
+
+import java.sql.*;
+
+public class InfoMetaDatos {
+
+	public static void main(String[] args) {
+		
+		//mostrarInfoBD();
+		mostrarInfoTabla();
+
+	}
+	
+	static void mostrarInfoBD() {
+		
+		Connection miConexion = null;
+		
+		try {
+			
+			miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pruebas", "root", "");
+			
+			//Obtención de metadatos
+			DatabaseMetaData datosBD = miConexion.getMetaData();
+			
+			//Mostrar informacion de la base de datos
+			
+			System.out.println("Gestor de BD: " + datosBD.getDatabaseProductName());
+			System.out.println("Versión del gestor: " + datosBD.getDatabaseProductVersion());
+			System.out.println("Nombre del driver: " + datosBD.getDriverName());
+			System.out.println("Versión del driver: " + datosBD.getDriverVersion());
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+					
+		}finally {
+			
+			try {
+				
+				miConexion.close();
+			
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			
+			}
+		}
+		
+	}
+	
+	static void mostrarInfoTabla() {
+		
+		Connection miConexion = null;
+		ResultSet miResultSet = null;
+		
+		try {
+			
+			miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pruebas", "root", "");
+			
+			//Obtención de metadatos
+			DatabaseMetaData datosBD = miConexion.getMetaData();
+			
+			//Lista de Tablas
+			System.out.println("Lista de Tablas:");
+			miResultSet = datosBD.getTables("pruebas", null, null, null);
+			
+			while(miResultSet.next()) {
+				
+				System.out.println(miResultSet.getString("TABLE_NAME"));
+				
+			}
+			
+			//Lista de columnas de Productos
+			
+			System.out.println(" ");
+			System.out.println("Campos de Productos");
+			
+			miResultSet = datosBD.getColumns(null, null, "productos", null);
+			
+			while(miResultSet.next()) {
+				
+				System.out.println(miResultSet.getString("COLUMN_NAME"));
+				
+			}
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+					
+		}finally {
+			
+			try {
+				
+				miConexion.close();
+			
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			
+			}
+		}
+	}
+
+}
