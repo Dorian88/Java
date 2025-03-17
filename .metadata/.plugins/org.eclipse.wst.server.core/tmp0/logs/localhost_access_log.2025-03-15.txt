@@ -1,0 +1,7 @@
+127.0.0.1 - - [15/Mar/2025:17:16:04 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [15/Mar/2025:17:16:08 -0500] "GET /PrimerosPasosJSP/ListaCompras.jsp HTTP/1.1" 200 990
+0:0:0:0:0:0:0:1 - - [15/Mar/2025:17:16:09 -0500] "GET /favicon.ico HTTP/1.1" 404 699
+0:0:0:0:0:0:0:1 - - [15/Mar/2025:17:16:46 -0500] "GET /PrimerosPasosJSP/ListaCompras.jsp?articulos=agua&articulos=leche&button=Enviar HTTP/1.1" 200 1021
+0:0:0:0:0:0:0:1 - - [15/Mar/2025:17:16:52 -0500] "GET /PrimerosPasosJSP/ListaCompras.jsp?articulos=pan&articulos=manzanas&button=Enviar HTTP/1.1" 200 1054
+0:0:0:0:0:0:0:1 - - [15/Mar/2025:17:16:58 -0500] "GET /PrimerosPasosJSP/ListaCompras.jsp?articulos=carne&articulos=pescado&button=Enviar HTTP/1.1" 200 1088
+0:0:0:0:0:0:0:1 - - [15/Mar/2025:18:49:39 -0500] "GET /PrimerosPasosJSP/FormularioEnvioPreferenciasViaje.html HTTP/1.1" 200 483

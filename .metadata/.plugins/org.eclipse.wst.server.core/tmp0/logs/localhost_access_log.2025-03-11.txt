@@ -1,0 +1,5 @@
+127.0.0.1 - - [11/Mar/2025:18:06:12 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [11/Mar/2025:18:06:16 -0500] "GET /PrimerosPasosJSP/Calculos.jsp HTTP/1.1" 200 71
+0:0:0:0:0:0:0:1 - - [11/Mar/2025:18:06:17 -0500] "GET /favicon.ico HTTP/1.1" 404 699
+0:0:0:0:0:0:0:1 - - [11/Mar/2025:18:09:57 -0500] "GET /PrimerosPasosJSP/Calculos.jsp HTTP/1.1" 200 153
+0:0:0:0:0:0:0:1 - - [11/Mar/2025:18:36:03 -0500] "GET /PrimerosPasosJSP/EjemploObjetos.jsp HTTP/1.1" 200 281
