@@ -16,10 +16,12 @@
 		
 		<c: set var="datos" values="Diana, Betancur, Directora, 75000"/>
 		
-		<input type="text" value=""><br>
-		<input type="text" value=""><br>
-		<input type="text" value=""><br>
-		<input type="text" value="">
+			<c: set var="datosArray" value="${fn:split(datos,',') }"/>
+		
+		<input type="text" value="${datosArry[0]}"><br>
+		<input type="text" value="${datosArry[1]}"><br>
+		<input type="text" value="${datosArry[3]}"><br>
+		<input type="text" value="${datosArry[4]}">
 		
 		
 	</body>

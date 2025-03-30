@@ -1,0 +1,74 @@
+package com.dorian.productos;
+
+import jakarta.annotation.Resource;
+import jakarta.servlet.RequestDispatcher;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.annotation.WebServlet;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import java.io.IOException;
+import java.util.List;
+
+/**
+ * Servlet implementation class ControladorProductos
+ */
+@WebServlet("/ControladorProductos")
+public class ControladorProductos extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+	
+	private ModeloProductos modeloProductos;
+	
+	@Resource(name="jdbc/Productos")
+	private javax.sql.DataSource miPool;
+	
+	
+
+	@Override
+	public void init() throws ServletException {
+		// TODO Auto-generated method stub
+		super.init();
+		
+		try {
+			
+			modeloProductos = new ModeloProductos(miPool);
+			
+		}catch(Exception e){
+			
+			throw new ServletException(e);
+			
+		}
+	}
+
+
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		//response.getWriter().append("Served at: ").append(request.getContextPath());
+		
+		//Obtener la lista de productos desde el modelo
+		List<Productos> productos;
+		
+		try {
+			
+			productos = modeloProductos.getProductos();
+			
+			//Agregar lista de productos al request
+			request.setAttribute("LISTAPRODUCTOS", productos);
+			
+			//Enviar el request a la página JSP
+			RequestDispatcher miDispatcher = request.getRequestDispatcher("/ListaProductos.jsp");
+			miDispatcher.forward(request, response);
+			
+		}catch(Exception e) {
+			
+			e.getStackTrace();
+			
+		}
+		
+	}
+
+}

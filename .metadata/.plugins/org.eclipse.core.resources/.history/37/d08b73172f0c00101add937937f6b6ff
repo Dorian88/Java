@@ -1,0 +1,51 @@
+package com.dorian.productos;
+
+import java.sql.*;
+import java.util.*;
+import java.util.Date;
+
+public class ModeloProductos {
+	
+	private javax.sql.DataSource origenDatos;
+	
+	public ModeloProductos(javax.sql.DataSource origenDatos) {
+		
+		this.origenDatos = origenDatos;
+		
+	}
+	
+	public List<Productos> getProductos() throws Exception{
+		
+		List<Productos> productos = new ArrayList<>();
+		
+		Connection miConexion = null;
+		Statement miStatement = null;
+		ResultSet miResultSet = null;
+		
+		//Establecer la conexion
+		miConexion = origenDatos.getConnection();
+		
+		//Crear sentencia sql y Statement
+		String instruccionSql = "SELECT * FROM PRODUCTOS";
+		miStatement = miConexion.createStatement();
+		
+		//Ejecutar sql
+		miResultSet = miStatement.executeQuery(instruccionSql);
+		
+		//Recorrer el ResultSet obtenido
+		while(miResultSet.next()) {
+			
+			String cArt = miResultSet.getString("CÓDIGOARTÍCULO");
+			String seccion = miResultSet.getString("SECCIÓN");
+			String nArt = miResultSet.getString("NOMBREARTÍCULO");
+			double precio = miResultSet.getDouble("PRECIO");
+			Date fecha = miResultSet.getDate("FECHA");
+			String importado = miResultSet.getString("IMPORTADO");
+			String pOrig = miResultSet.getString("PAÍSDEORIGEN");
+			
+			Productos temProd = new Productos(cArt, seccion, nArt, precio, fecha, importado, pOrig);
+		}
+		return null;
+	}
+
+}
