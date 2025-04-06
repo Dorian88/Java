@@ -1,0 +1,6 @@
+127.0.0.1 - - [02/Apr/2025:17:06:52 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [02/Apr/2025:17:06:59 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 16173
+0:0:0:0:0:0:0:1 - - [02/Apr/2025:17:06:59 -0500] "GET /favicon.ico HTTP/1.1" 404 699
+0:0:0:0:0:0:0:1 - - [02/Apr/2025:17:17:20 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 19747
+127.0.0.1 - - [02/Apr/2025:17:26:34 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [02/Apr/2025:17:26:41 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 21634

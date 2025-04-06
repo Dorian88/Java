@@ -20,3 +20,6 @@
 0:0:0:0:0:0:0:1 - - [30/Mar/2025:14:07:04 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 9194
 127.0.0.1 - - [30/Mar/2025:14:31:11 -0500] "GET / HTTP/1.1" 404 688
 0:0:0:0:0:0:0:1 - - [30/Mar/2025:14:31:16 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 9467
+0:0:0:0:0:0:0:1 - - [30/Mar/2025:14:41:57 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13530
+0:0:0:0:0:0:0:1 - - [30/Mar/2025:14:42:33 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13531
+0:0:0:0:0:0:0:1 - - [30/Mar/2025:14:43:09 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13532

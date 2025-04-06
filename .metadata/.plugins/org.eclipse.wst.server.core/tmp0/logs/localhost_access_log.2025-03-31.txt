@@ -1,0 +1,10 @@
+127.0.0.1 - - [31/Mar/2025:16:55:16 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:16:55:21 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13532
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:16:55:21 -0500] "GET /favicon.ico HTTP/1.1" 404 699
+127.0.0.1 - - [31/Mar/2025:17:01:37 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:17:01:44 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13763
+127.0.0.1 - - [31/Mar/2025:17:09:27 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:17:09:32 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13816
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:17:09:36 -0500] "GET /WebDeProductos/insertaProducto.jsp HTTP/1.1" 200 150
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:17:36:17 -0500] "GET /WebDeProductos/ControladorProductos HTTP/1.1" 200 13816
+0:0:0:0:0:0:0:1 - - [31/Mar/2025:17:36:25 -0500] "GET /WebDeProductos/insertaProducto.jsp HTTP/1.1" 200 1531
