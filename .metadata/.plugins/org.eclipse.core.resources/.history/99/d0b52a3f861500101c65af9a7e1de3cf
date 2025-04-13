@@ -1,0 +1,39 @@
+package SwingAvanzado;
+
+import java.awt.BorderLayout;
+
+import javax.swing.*;
+
+public class SA5TablaProductos {
+
+	public static void main(String[] args) {
+		
+		JFrame miMarco = new MarcoProductos();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+class MarcoProductos extends JFrame{
+	
+	public MarcoProductos() {
+		
+		setTitle("Tabla Personalizada");
+		
+		setBounds(500, 300, 800, 400);
+		
+		JPanel superior = new JPanel();
+		
+		nombresDeTablas = new JComboBox();
+		
+		superior.add(nombresDeTablas);
+		
+		add(superior, BorderLayout.NORTH);
+	}
+	
+	private JComboBox nombresDeTablas;
+}

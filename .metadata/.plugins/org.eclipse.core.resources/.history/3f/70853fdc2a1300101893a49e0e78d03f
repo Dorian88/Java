@@ -1,0 +1,27 @@
+package Avanzado;
+
+import javax.swing.*;
+
+public class A1PruebaLista {
+
+	public static void main(String[] args) {
+		
+		JFrame miMarco = new MarcoDeLista();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		miMarco.setVisible(true);
+
+	}
+
+}
+
+class MarcoDeLista extends JFrame{
+	
+	public MarcoDeLista() {
+		
+		setTitle("Prueba de lista");
+		
+		setBounds(400, 300, 400, 300);
+	}
+}
