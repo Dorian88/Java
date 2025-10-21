@@ -1,0 +1,10 @@
+127.0.0.1 - - [27/Mar/2025:20:25:09 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [27/Mar/2025:20:25:11 -0500] "GET /Servlest/ControladorServlet HTTP/1.1" 500 8041
+0:0:0:0:0:0:0:1 - - [27/Mar/2025:20:25:11 -0500] "GET /favicon.ico HTTP/1.1" 404 699
+127.0.0.1 - - [27/Mar/2025:20:43:40 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [27/Mar/2025:20:43:41 -0500] "GET /Servlest/ControladorServlet HTTP/1.1" 500 5839
+127.0.0.1 - - [27/Mar/2025:20:56:12 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [27/Mar/2025:20:56:37 -0500] "GET /Servlest/ControladorServlet HTTP/1.1" 200 274
+127.0.0.1 - - [27/Mar/2025:20:58:46 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [27/Mar/2025:20:59:12 -0500] "GET /PrimerosPasosJSP/FormularioRegistro.html HTTP/1.1" 200 338
+0:0:0:0:0:0:0:1 - - [27/Mar/2025:20:59:21 -0500] "GET /PrimerosPasosJSP/Registro.jsp?Nombre=Dorian&Apellido=Jaramillo HTTP/1.1" 200 212

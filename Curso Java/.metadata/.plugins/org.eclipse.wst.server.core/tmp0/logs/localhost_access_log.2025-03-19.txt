@@ -1,0 +1,9 @@
+127.0.0.1 - - [19/Mar/2025:17:19:39 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [19/Mar/2025:17:19:42 -0500] "GET /PrimerosPasosJSP/EjemploJSPTags.jsp HTTP/1.1" 500 7207
+0:0:0:0:0:0:0:1 - - [19/Mar/2025:17:19:43 -0500] "GET /favicon.ico HTTP/1.1" 404 699
+127.0.0.1 - - [19/Mar/2025:19:21:13 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [19/Mar/2025:19:21:14 -0500] "GET /PrimerosPasosJSP/WEB-INF/RecorrreEmpleados.jsp HTTP/1.1" 404 611
+127.0.0.1 - - [19/Mar/2025:19:33:20 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [19/Mar/2025:19:33:21 -0500] "GET /PrimerosPasosJSP/WEB-INF/RecorrreEmpleados.jsp HTTP/1.1" 404 611
+127.0.0.1 - - [19/Mar/2025:19:49:27 -0500] "GET / HTTP/1.1" 404 688
+0:0:0:0:0:0:0:1 - - [19/Mar/2025:19:49:28 -0500] "GET /PrimerosPasosJSP/RecorrreEmpleados.jsp HTTP/1.1" 500 7207

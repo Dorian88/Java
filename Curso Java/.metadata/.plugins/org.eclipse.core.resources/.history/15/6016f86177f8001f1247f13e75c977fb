@@ -1,0 +1,50 @@
+package metadatos;
+
+import java.sql.*;
+
+public class InfoMetaDatos {
+
+	public static void main(String[] args) {
+		
+		mostrarInfoBD();
+
+	}
+	
+	static void mostrarInfoBD() {
+		
+		Connection miConexion = null;
+		
+		try {
+			
+			miConexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/pruebas", "root", "");
+			
+			//Obtención de metadatos
+			DatabaseMetaData datosBD = miConexion.getMetaData();
+			
+			//Mostrar informacion de la base de datos
+			
+			System.out.println("Gestor de BD: " + datosBD.getDatabaseProductName());
+			System.out.println("Versión del gestor: " + datosBD.getDatabaseProductVersion());
+			System.out.println("Nombre del driver: " + datosBD.getDriverName());
+			System.out.println("Versión del driver: " + datosBD.getDriverVersion());
+			
+		}catch(Exception e) {
+			
+			e.printStackTrace();
+					
+		}finally {
+			
+			try {
+				
+				miConexion.close();
+			
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			
+			}
+		}
+		
+	}
+
+}

@@ -1,0 +1,218 @@
+package Chat;
+
+import javax.swing.*;
+import java.awt.event.*;
+import java.io.*;
+import java.net.*;
+import java.util.*;
+
+public class Cliente {
+
+	public static void main(String[] args) {
+		
+		MarcoCliente miMarco = new MarcoCliente();
+		
+		miMarco.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+
+	}
+
+}
+
+class MarcoCliente extends JFrame{
+	
+	public MarcoCliente() {
+		
+		setBounds(600, 300, 280, 350);
+		
+		LaminaMarcoCliente miLamina = new LaminaMarcoCliente();
+		
+		add(miLamina);
+		
+		setVisible(true);
+		
+		addWindowListener(new EnvioOnline());
+	}
+}
+
+//Envio de la señal online
+class EnvioOnline extends WindowAdapter{
+	
+	public void windowOpened(WindowEvent e) {
+		
+		try {
+			
+			Socket miSocket = new Socket("192.168.1.4", 9999);
+			PaqueteEnvio datos = new PaqueteEnvio();
+			datos.setMensaje(" Online");
+			
+			ObjectOutputStream paqueteDatos = new ObjectOutputStream(miSocket.getOutputStream());
+			paqueteDatos.writeObject(datos);
+			miSocket.close();
+		}catch(Exception e1) {
+			
+		}
+	}
+}
+
+//------------------------------------------------------------------------------------------------------------------------------------------
+class LaminaMarcoCliente extends JPanel implements Runnable{
+	
+	public LaminaMarcoCliente() {
+		
+		String nickUsuario = JOptionPane.showInputDialog("Nick: ");
+		
+		JLabel nNick = new JLabel("Nick: ");
+		add(nNick);
+		
+		nick = new JLabel();
+		nick.setText(nickUsuario);
+		add(nick);
+		
+		JLabel texto = new JLabel("Online: ");
+		add(texto);
+		
+		ip = new JComboBox();
+		/*ip.addItem("Usuario 1");
+		ip.addItem("Usuario 2");
+		ip.addItem("Usuario 3");
+		
+		ip.addItem("192.168.1.4");*/
+		
+		add(ip);
+		
+		campoChat = new JTextArea(12, 20);
+		add(campoChat);
+		
+		campo1 = new JTextField(20);
+		add(campo1);
+		
+		miBoton = new JButton("Enviar");
+		EnviaTexto miEvento = new EnviaTexto();
+		miBoton.addActionListener(miEvento);
+		add(miBoton);
+		
+		Thread miHilo = new Thread(this);
+		miHilo.start();
+		
+	}
+	
+	private class EnviaTexto implements ActionListener{
+
+		public void actionPerformed(ActionEvent e) {
+			
+			campoChat.append("\n" + campo1.getText());
+			
+			try {
+				
+				//Puente del cliente al servidor
+				Socket miSocket = new Socket("192.168.1.4", 9999);
+				
+				PaqueteEnvio datos = new PaqueteEnvio();
+				datos.setNick(nick.getText());
+				datos.setIp(ip.getSelectedItem().toString());
+				datos.setMensaje(campo1.getText());
+				
+				ObjectOutputStream paqueteDatos = new ObjectOutputStream(miSocket.getOutputStream());
+				paqueteDatos.writeObject(datos);
+				
+				paqueteDatos.close();
+				miSocket.close();
+				
+			} catch (IOException e1) {
+				
+				System.out.println(e1.getMessage());
+				
+			}
+			
+		}
+		
+	}
+	
+	public void run() {
+		
+		try {
+			
+			ServerSocket servidorCliente = new ServerSocket(9090);
+			Socket cliente;
+			PaqueteEnvio paqueteRecibido;
+			
+			while(true) {
+				cliente = servidorCliente.accept();
+				ObjectInputStream flujoEntrada = new ObjectInputStream(cliente.getInputStream());
+				
+				paqueteRecibido = (PaqueteEnvio) flujoEntrada.readObject();
+				
+				if (!paqueteRecibido.getMensaje().equals(" Online")) {
+					
+					campoChat.append("\n" + paqueteRecibido.getNick() + ": " + paqueteRecibido.getMensaje());
+					
+				}else {
+					//campoChat.append("\n" + paqueteRecibido.getIps());
+					
+					ArrayList<String> ipsMenu = new ArrayList<String>();
+					
+					ipsMenu = paqueteRecibido.getIps();
+					
+					ip.removeAllItems();
+					
+					for (String z : ipsMenu) {
+						
+						ip.addItem(z);
+					}
+				}
+				
+			}
+			
+		}catch(Exception e) {
+			
+			System.out.println(e.getMessage());
+		}
+	}
+	
+	private JTextField campo1;
+	private JComboBox ip;
+	private JLabel nick;
+	private JButton miBoton;
+	private JTextArea campoChat;
+
+}
+
+class PaqueteEnvio implements Serializable{
+	
+	
+	
+	public String getNick() {
+		return nick;
+	}
+
+	public void setNick(String nick) {
+		this.nick = nick;
+	}
+
+	public String getIp() {
+		return ip;
+	}
+
+	public void setIp(String ip) {
+		this.ip = ip;
+	}
+
+	public String getMensaje() {
+		return mensaje;
+	}
+
+	public void setMensaje(String mensaje) {
+		this.mensaje = mensaje;
+	}
+	
+	public ArrayList<String> getIps() {
+		return ips;
+	}
+
+	public void setIps(ArrayList<String> ips) {
+		this.ips = ips;
+	}
+
+	private String nick, ip, mensaje;
+	private ArrayList<String> ips;
+}

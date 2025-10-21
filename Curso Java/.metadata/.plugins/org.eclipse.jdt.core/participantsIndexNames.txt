@@ -1,0 +1,9 @@
+INDEX VERSION 1.134
+C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2875044450.index
+\Servlest\src\main\java
+C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\617865146.index
+\PrimerosPasosJSP\src\main\java
+C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2636141022.index
+\WebDeProductos\src\main\java
+C:\Users\USUARIO\Documents\Curso Java\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3240855760.index
+\PrimerosPasosJSP\src\main\java
